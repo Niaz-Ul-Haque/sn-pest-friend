@@ -753,11 +753,12 @@
       .progress-bar {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 40px;
+        margin: 0 auto 40px;
         background: white;
         padding: 24px;
         border-radius: 16px;
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+        max-width: 800px;
       }
 
       .progress-step {
@@ -794,8 +795,9 @@
         padding: 40px;
         border-radius: 20px;
         box-shadow: 0 12px 48px rgba(0, 0, 0, 0.08);
-        margin-bottom: 32px;
+        margin: 0 auto 32px;
         position: relative;
+        max-width: 800px;
       }
 
       .step.active {
@@ -1066,8 +1068,9 @@
         border: 3px solid #2e8b57;
         border-radius: 20px;
         padding: 32px;
-        margin-bottom: 32px;
+        margin: 0 auto 32px;
         box-shadow: 0 12px 48px rgba(46, 139, 87, 0.1);
+        max-width: 100%;
       }
 
       .quote-line {
@@ -1128,8 +1131,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 40px;
+        margin: 40px auto 0;
         gap: 20px;
+        background: white;
+        padding: 24px 40px;
+        border-radius: 20px;
+        box-shadow: 0 12px 48px rgba(0, 0, 0, 0.08);
+        max-width: 800px;
       }
 
       .navigation > div {
@@ -1197,9 +1205,10 @@
       .copy-btn {
         background: linear-gradient(135deg, #17a2b8, #138496);
         color: white;
-        margin-bottom: 16px;
+        margin: 0 auto 16px;
         box-shadow: 0 4px 16px rgba(23, 162, 184, 0.3);
-        width: 100%;
+        max-width: 400px;
+        display: block;
       }
 
       .copy-btn:hover {
@@ -1928,12 +1937,22 @@
           <label
             data-en="Extended Protection Plan (Optional)"
             data-fr="Plan de Protection Étendu (Optionnel)"
+            data-es="Plan de Protección Extendida (Opcional)"
+            data-zh="延长保护计划（可选）"
+            data-it="Piano di Protezione Esteso (Opzionale)"
+            data-fa="برنامه حفاظت تمدید شده (اختیاری)"
+            data-ar="خطة الحماية الممتدة (اختياري)"
             >Extended Protection Plan (Optional)</label
           >
           <div class="radio-group" id="protectionPlan">
             <div class="radio-option" data-value="none">
               <input type="radio" name="protection" value="none" checked />
               <span data-en="No Extended Plan" data-fr="Aucun Plan Étendu"
+                data-es="Sin Plan Extendido"
+                data-zh="无延长计划"
+                data-it="Nessun Piano Esteso"
+                data-fa="بدون برنامه تمدید شده"
+                data-ar="لا توجد خطة ممتدة"
                 >No Extended Plan</span
               >
             </div>
@@ -1942,6 +1961,11 @@
               <span
                 data-en="4-Month Guarantee - $40"
                 data-fr="Garantie 4 Mois - 40$"
+                data-es="Garantía de 4 Meses - $40"
+                data-zh="4个月保证 - $40"
+                data-it="Garanzia 4 Mesi - $40"
+                data-fa="ضمانت 4 ماهه - 40$"
+                data-ar="ضمان 4 أشهر - 40$"
                 >4-Month Guarantee - $40</span
               >
             </div>
@@ -1950,6 +1974,11 @@
               <span
                 data-en="6-Month Guarantee - $50"
                 data-fr="Garantie 6 Mois - 50$"
+                data-es="Garantía de 6 Meses - $50"
+                data-zh="6个月保证 - $50"
+                data-it="Garanzia 6 Mesi - $50"
+                data-fa="ضمانت 6 ماهه - 50$"
+                data-ar="ضمان 6 أشهر - 50$"
                 >6-Month Guarantee - $50</span
               >
             </div>
@@ -1958,6 +1987,11 @@
               <span
                 data-en="1-Year Guarantee - $60 (Best Value!)"
                 data-fr="Garantie 1 An - 60$ (Meilleure Valeur!)"
+                data-es="Garantía de 1 Año - $60 (¡Mejor Valor!)"
+                data-zh="1年保证 - $60（最超值！）"
+                data-it="Garanzia 1 Anno - $60 (Miglior Valore!)"
+                data-fa="ضمانت 1 ساله - 60$ (بهترین ارزش!)"
+                data-ar="ضمان سنة واحدة - 60$ (أفضل قيمة!)"
                 >1-Year Guarantee - $60 (Best Value!)</span
               >
             </div>
@@ -1977,11 +2011,21 @@
           <strong
             data-en="💎 Add Extended Protection for Peace of Mind!"
             data-fr="💎 Ajoutez une Protection Étendue pour votre Tranquillité d'Esprit!"
+            data-es="💎 ¡Agregue Protección Extendida para su Tranquilidad!"
+            data-zh="💎 增加延长保护，享受安心！"
+            data-it="💎 Aggiungi Protezione Estesa per la Tranquillità!"
+            data-fa="💎 حفاظت تمدید شده را برای آرامش خاطر اضافه کنید!"
+            data-ar="💎 أضف الحماية الممتدة لراحة البال!"
             >💎 Add Extended Protection for Peace of Mind!</strong
           ><br />
           <span
             data-en="Our Extended Protection Plans provide guaranteed coverage with follow-up treatments if pests return. Choose from 4-month, 6-month, or 1-year guarantee options below."
             data-fr="Nos Plans de Protection Étendue offrent une couverture garantie avec des traitements de suivi si les nuisibles reviennent. Choisissez parmi les options de garantie de 4 mois, 6 mois ou 1 an ci-dessous."
+            data-es="Nuestros Planes de Protección Extendida ofrecen cobertura garantizada con tratamientos de seguimiento si las plagas regresan. Elija entre las opciones de garantía de 4 meses, 6 meses o 1 año a continuación."
+            data-zh="我们的延长保护计划提供保证覆盖，如果害虫返回，将提供后续治疗。从下面的4个月、6个月或1年保证选项中选择。"
+            data-it="I nostri Piani di Protezione Estesa forniscono copertura garantita con trattamenti di follow-up se i parassiti ritornano. Scegli tra le opzioni di garanzia di 4 mesi, 6 mesi o 1 anno di seguito."
+            data-fa="برنامه‌های حفاظت تمدید شده ما پوشش تضمین شده با درمان‌های پیگیری ارائه می‌دهند اگر آفات بازگردند. از گزینه‌های ضمانت 4 ماهه، 6 ماهه یا 1 ساله زیر انتخاب کنید."
+            data-ar="توفر خطط الحماية الممتدة لدينا تغطية مضمونة مع علاجات متابعة إذا عادت الآفات. اختر من بين خيارات الضمان لمدة 4 أشهر أو 6 أشهر أو سنة واحدة أدناه."
             >Our Extended Protection Plans provide guaranteed coverage with
             follow-up treatments if pests return. Choose from 4-month, 6-month,
             or 1-year guarantee options below.</span
@@ -1994,23 +2038,45 @@
         <h2
           data-en="Pest Details & Severity"
           data-fr="Détails des Nuisibles & Gravité"
+          data-es="Detalles de Plagas y Gravedad"
+          data-zh="害虫详情与严重程度"
+          data-it="Dettagli dei Parassiti e Gravità"
+          data-fa="جزئیات آفات و شدت"
+          data-ar="تفاصيل الآفات والخطورة"
         >
           Pest Details & Severity
         </h2>
 
         <div class="services-section">
-          <h3 data-en="Service Packages" data-fr="Forfaits de Service">
+          <h3 data-en="Service Packages" data-fr="Forfaits de Service"
+            data-es="Paquetes de Servicio"
+            data-zh="服务套餐"
+            data-it="Pacchetti di Servizio"
+            data-fa="بسته‌های خدمات"
+            data-ar="حزم الخدمة"
+          >
             Service Packages
           </h3>
 
           <div class="package-card" data-package="rodent-family">
-            <h4 data-en="The Rodent Family" data-fr="La Famille des Rongeurs">
+            <h4 data-en="The Rodent Family" data-fr="La Famille des Rongeurs"
+              data-es="La Familia de Roedores"
+              data-zh="啮齿动物家族"
+              data-it="La Famiglia dei Roditori"
+              data-fa="خانواده جوندگان"
+              data-ar="عائلة القوارض"
+            >
               The Rodent Family
             </h4>
             <div
               class="package-includes"
               data-en="Includes: Mice, Rats"
               data-fr="Inclus: Souris, Rats"
+              data-es="Incluye: Ratones, Ratas"
+              data-zh="包括：小鼠、大鼠"
+              data-it="Include: Topi, Ratti"
+              data-fa="شامل: موش، موش صحرایی"
+              data-ar="يتضمن: فئران، جرذان"
             >
               Includes: Mice, Rats
             </div>
@@ -2020,6 +2086,11 @@
             <h4
               data-en="Crawling Insect Defense"
               data-fr="Défense contre les Insectes Rampants"
+              data-es="Defensa contra Insectos Rastreros"
+              data-zh="爬行昆虫防御"
+              data-it="Difesa contro Insetti Striscianti"
+              data-fa="دفاع در برابر حشرات خزنده"
+              data-ar="الدفاع ضد الحشرات الزاحفة"
             >
               Crawling Insect Defense
             </h4>
@@ -2027,6 +2098,11 @@
               class="package-includes"
               data-en="Includes: Ants, Spiders, Cockroaches"
               data-fr="Inclus: Fourmis, Araignées, Cafards"
+              data-es="Incluye: Hormigas, Arañas, Cucarachas"
+              data-zh="包括：蚂蚁、蜘蛛、蟑螂"
+              data-it="Include: Formiche, Ragni, Scarafaggi"
+              data-fa="شامل: مورچه، عنکبوت، سوسک"
+              data-ar="يتضمن: نمل، عناكب، صراصير"
             >
               Includes: Ants, Spiders, Cockroaches
             </div>
@@ -2036,6 +2112,11 @@
             <h4
               data-en="General Home Guard"
               data-fr="Protection Générale du Foyer"
+              data-es="Protección General del Hogar"
+              data-zh="家庭综合防护"
+              data-it="Protezione Generale della Casa"
+              data-fa="حفاظت عمومی خانه"
+              data-ar="الحماية العامة للمنزل"
             >
               General Home Guard
             </h4>
@@ -2043,6 +2124,11 @@
               class="package-includes"
               data-en="Includes: Ants, Spiders, Mice"
               data-fr="Inclus: Fourmis, Araignées, Souris"
+              data-es="Incluye: Hormigas, Arañas, Ratones"
+              data-zh="包括：蚂蚁、蜘蛛、小鼠"
+              data-it="Include: Formiche, Ragni, Topi"
+              data-fa="شامل: مورچه، عنکبوت، موش"
+              data-ar="يتضمن: نمل، عناكب، فئران"
             >
               Includes: Ants, Spiders, Mice
             </div>
@@ -2050,20 +2136,27 @@
         </div>
 
         <div class="services-section">
-          <h3 data-en="Individual Services" data-fr="Services Individuels">
+          <h3 data-en="Individual Services" data-fr="Services Individuels"
+            data-es="Servicios Individuales"
+            data-zh="个别服务"
+            data-it="Servizi Individuali"
+            data-fa="خدمات فردی"
+            data-ar="خدمات فردية"
+          >
             Individual Services
           </h3>
-
-          <div class="services-section">
-            <h3 data-en="Individual Services" data-fr="Services Individuels">
-              Individual Services
-            </h3>
 
             <!-- Most Common Pests First -->
             <div class="service-card" data-service="ants">
               <div class="service-info">
                 <div class="service-details">
-                  <strong data-en="Ants" data-fr="Fourmis">Ants</strong>
+                  <strong data-en="Ants" data-fr="Fourmis"
+                    data-es="Hormigas"
+                    data-zh="蚂蚁"
+                    data-it="Formiche"
+                    data-fa="مورچه"
+                    data-ar="نمل"
+                  >Ants</strong>
                   <img
                     src="images/ants.jpeg"
                     alt="Ants"
@@ -2076,6 +2169,11 @@
                     data-severity="low"
                     data-en="Low"
                     data-fr="Faible"
+                    data-es="Bajo"
+                    data-zh="低"
+                    data-it="Basso"
+                    data-fa="کم"
+                    data-ar="منخفض"
                   >
                     Low
                   </button>
@@ -2084,6 +2182,11 @@
                     data-severity="medium"
                     data-en="Medium"
                     data-fr="Moyen"
+                    data-es="Medio"
+                    data-zh="中"
+                    data-it="Medio"
+                    data-fa="متوسط"
+                    data-ar="متوسط"
                   >
                     Medium
                   </button>
@@ -2092,6 +2195,11 @@
                     data-severity="high"
                     data-en="High"
                     data-fr="Élevé"
+                    data-es="Alto"
+                    data-zh="高"
+                    data-it="Alto"
+                    data-fa="زیاد"
+                    data-ar="مرتفع"
                   >
                     High
                   </button>
@@ -2100,6 +2208,11 @@
                     data-severity="no-idea"
                     data-en="No idea"
                     data-fr="Aucune idée"
+                    data-es="No sé"
+                    data-zh="不确定"
+                    data-it="Non so"
+                    data-fa="نمی‌دانم"
+                    data-ar="لا أعرف"
                   >
                     No idea
                   </button>
@@ -2109,6 +2222,11 @@
                 class="pro-tip"
                 data-en="Pro Tip: Ants follow scent trails to food sources. Eliminating these trails and food access is crucial for control."
                 data-fr="Conseil Pro: Les fourmis suivent les pistes odorantes vers les sources de nourriture. Éliminer ces pistes et l'accès à la nourriture est crucial pour le contrôle."
+                data-es="Consejo Profesional: Las hormigas siguen rastros de olor hacia las fuentes de comida. Eliminar estos rastros y el acceso a la comida es crucial para el control."
+                data-zh="专业提示：蚂蚁沿着气味轨迹寻找食物来源。消除这些轨迹和食物来源对于控制至关重要。"
+                data-it="Consiglio Professionale: Le formiche seguono tracce odorose verso le fonti di cibo. Eliminare queste tracce e l'accesso al cibo è cruciale per il controllo."
+                data-fa="نکته حرفه‌ای: مورچه‌ها از مسیرهای بویایی برای یافتن منابع غذا استفاده می‌کنند. از بین بردن این مسیرها و دسترسی به غذا برای کنترل حیاتی است."
+                data-ar="نصيحة محترفة: يتبع النمل مسارات الرائحة إلى مصادر الطعام. إزالة هذه المسارات والوصول إلى الطعام أمر بالغ الأهمية للسيطرة."
               >
                 Pro Tip: Ants follow scent trails to food sources. Eliminating
                 these trails and food access is crucial for control.
@@ -2118,7 +2236,13 @@
             <div class="service-card" data-service="mice">
               <div class="service-info">
                 <div class="service-details">
-                  <strong data-en="Mice" data-fr="Souris">Mice</strong>
+                  <strong data-en="Mice" data-fr="Souris"
+                    data-es="Ratones"
+                    data-zh="小鼠"
+                    data-it="Topi"
+                    data-fa="موش"
+                    data-ar="فئران"
+                  >Mice</strong>
                   <img
                     src="images/mice.jpeg"
                     alt="Mice"
@@ -2131,6 +2255,11 @@
                     data-severity="low"
                     data-en="Low"
                     data-fr="Faible"
+                    data-es="Bajo"
+                    data-zh="低"
+                    data-it="Basso"
+                    data-fa="کم"
+                    data-ar="منخفض"
                   >
                     Low
                   </button>
@@ -2139,6 +2268,11 @@
                     data-severity="medium"
                     data-en="Medium"
                     data-fr="Moyen"
+                    data-es="Medio"
+                    data-zh="中"
+                    data-it="Medio"
+                    data-fa="متوسط"
+                    data-ar="متوسط"
                   >
                     Medium
                   </button>
@@ -2147,6 +2281,11 @@
                     data-severity="high"
                     data-en="High"
                     data-fr="Élevé"
+                    data-es="Alto"
+                    data-zh="高"
+                    data-it="Alto"
+                    data-fa="زیاد"
+                    data-ar="مرتفع"
                   >
                     High
                   </button>
@@ -2155,6 +2294,11 @@
                     data-severity="no-idea"
                     data-en="No idea"
                     data-fr="Aucune idée"
+                    data-es="No sé"
+                    data-zh="不确定"
+                    data-it="Non so"
+                    data-fa="نمی‌دانم"
+                    data-ar="لا أعرف"
                   >
                     No idea
                   </button>
@@ -2164,6 +2308,11 @@
                 class="pro-tip"
                 data-en="Pro Tip: Mice can contaminate food and spread diseases. Prevention through proper food storage is key."
                 data-fr="Conseil Pro: Les souris peuvent contaminer la nourriture et propager des maladies. La prévention par un stockage approprié des aliments est essentielle."
+                data-es="Consejo Profesional: Los ratones pueden contaminar la comida y propagar enfermedades. La prevención mediante el almacenamiento adecuado de alimentos es clave."
+                data-zh="专业提示：小鼠可能会污染食物并传播疾病。通过适当的食物储存进行预防是关键。"
+                data-it="Consiglio Professionale: I topi possono contaminare il cibo e diffondere malattie. La prevenzione attraverso la corretta conservazione degli alimenti è fondamentale."
+                data-fa="نکته حرفه‌ای: موش‌ها می‌توانند غذا را آلوده کنند و بیماری‌ها را منتشر کنند. پیشگیری از طریق ذخیره‌سازی صحیح مواد غذایی کلیدی است."
+                data-ar="نصيحة محترفة: يمكن للفئران تلويث الطعام ونشر الأمراض. الوقاية من خلال التخزين السليم للطعام هو المفتاح."
               >
                 Pro Tip: Mice can contaminate food and spread diseases.
                 Prevention through proper food storage is key.
@@ -2173,7 +2322,13 @@
             <div class="service-card" data-service="spiders">
               <div class="service-info">
                 <div class="service-details">
-                  <strong data-en="Spiders" data-fr="Araignées">Spiders</strong>
+                  <strong data-en="Spiders" data-fr="Araignées"
+                    data-es="Arañas"
+                    data-zh="蜘蛛"
+                    data-it="Ragni"
+                    data-fa="عنکبوت"
+                    data-ar="عناكب"
+                  >Spiders</strong>
                   <img
                     src="images/spiders.jpeg"
                     alt="Spiders"
@@ -2186,6 +2341,11 @@
                     data-severity="low"
                     data-en="Low"
                     data-fr="Faible"
+                    data-es="Bajo"
+                    data-zh="低"
+                    data-it="Basso"
+                    data-fa="کم"
+                    data-ar="منخفض"
                   >
                     Low
                   </button>
@@ -2194,6 +2354,11 @@
                     data-severity="medium"
                     data-en="Medium"
                     data-fr="Moyen"
+                    data-es="Medio"
+                    data-zh="中"
+                    data-it="Medio"
+                    data-fa="متوسط"
+                    data-ar="متوسط"
                   >
                     Medium
                   </button>
@@ -2202,6 +2367,11 @@
                     data-severity="high"
                     data-en="High"
                     data-fr="Élevé"
+                    data-es="Alto"
+                    data-zh="高"
+                    data-it="Alto"
+                    data-fa="زیاد"
+                    data-ar="مرتفع"
                   >
                     High
                   </button>
@@ -2210,6 +2380,11 @@
                     data-severity="no-idea"
                     data-en="No idea"
                     data-fr="Aucune idée"
+                    data-es="No sé"
+                    data-zh="不确定"
+                    data-it="Non so"
+                    data-fa="نمی‌دانم"
+                    data-ar="لا أعرف"
                   >
                     No idea
                   </button>
@@ -2219,6 +2394,11 @@
                 class="pro-tip"
                 data-en="Pro Tip: Spiders are natural pest controllers, but large populations can indicate other pest issues. Regular cleaning helps prevent infestations."
                 data-fr="Conseil Pro: Les araignées sont des contrôleurs naturels de nuisibles, mais de grandes populations peuvent indiquer d'autres problèmes de nuisibles. Un nettoyage régulier aide à prévenir les infestations."
+                data-es="Consejo Profesional: Las arañas son controladores naturales de plagas, pero poblaciones grandes pueden indicar otros problemas de plagas. La limpieza regular ayuda a prevenir infestaciones."
+                data-zh="专业提示：蜘蛛是天然的害虫控制者，但大量蜘蛛可能表明存在其他害虫问题。定期清洁有助于防止虫害。"
+                data-it="Consiglio Professionale: I ragni sono controller naturali di parassiti, ma grandi popolazioni possono indicare altri problemi di parassiti. La pulizia regolare aiuta a prevenire le infestazioni."
+                data-fa="نکته حرفه‌ای: عنکبوت‌ها کنترل‌کننده‌های طبیعی آفات هستند، اما جمعیت‌های بزرگ می‌توانند نشان‌دهنده مشکلات آفت دیگر باشند. تمیز کردن منظم به جلوگیری از آلودگی کمک می‌کند."
+                data-ar="نصيحة محترفة: العناكب هي مكافحات طبيعية للآفات، ولكن الأعداد الكبيرة يمكن أن تشير إلى مشاكل آفات أخرى. التنظيف المنتظم يساعد على منع الإصابات."
               >
                 Pro Tip: Spiders are natural pest controllers, but large
                 populations can indicate other pest issues. Regular cleaning
@@ -2230,6 +2410,11 @@
               <div class="service-info">
                 <div class="service-details">
                   <strong data-en="Cockroaches" data-fr="Cafards"
+                    data-es="Cucarachas"
+                    data-zh="蟑螂"
+                    data-it="Scarafaggi"
+                    data-fa="سوسک"
+                    data-ar="صراصير"
                     >Cockroaches</strong
                   >
                   <img
@@ -2244,6 +2429,11 @@
                     data-severity="low"
                     data-en="Low"
                     data-fr="Faible"
+                    data-es="Bajo"
+                    data-zh="低"
+                    data-it="Basso"
+                    data-fa="کم"
+                    data-ar="منخفض"
                   >
                     Low
                   </button>
@@ -2252,6 +2442,11 @@
                     data-severity="medium"
                     data-en="Medium"
                     data-fr="Moyen"
+                    data-es="Medio"
+                    data-zh="中"
+                    data-it="Medio"
+                    data-fa="متوسط"
+                    data-ar="متوسط"
                   >
                     Medium
                   </button>
@@ -2260,6 +2455,11 @@
                     data-severity="high"
                     data-en="High"
                     data-fr="Élevé"
+                    data-es="Alto"
+                    data-zh="高"
+                    data-it="Alto"
+                    data-fa="زیاد"
+                    data-ar="مرتفع"
                   >
                     High
                   </button>
@@ -2268,6 +2468,11 @@
                     data-severity="no-idea"
                     data-en="No idea"
                     data-fr="Aucune idée"
+                    data-es="No sé"
+                    data-zh="不确定"
+                    data-it="Non so"
+                    data-fa="نمی‌دانم"
+                    data-ar="لا أعرف"
                   >
                     No idea
                   </button>
@@ -2277,6 +2482,11 @@
                 class="pro-tip"
                 data-en="Pro Tip: Cockroaches spread bacteria and allergens. They thrive in warm, moist environments. Professional treatment is often necessary for effective control."
                 data-fr="Conseil Pro: Les cafards propagent des bactéries et des allergènes. Ils prospèrent dans des environnements chauds et humides. Un traitement professionnel est souvent nécessaire pour un contrôle efficace."
+                data-es="Consejo Profesional: Las cucarachas propagan bacterias y alérgenos. Prosperan en ambientes cálidos y húmedos. El tratamiento profesional suele ser necesario para un control efectivo."
+                data-zh="专业提示：蟑螂传播细菌和过敏原。它们在温暖潮湿的环境中繁衍生息。专业治疗通常是有效控制所必需的。"
+                data-it="Consiglio Professionale: Gli scarafaggi diffondono batteri e allergeni. Prosperano in ambienti caldi e umidi. Il trattamento professionale è spesso necessario per un controllo efficace."
+                data-fa="نکته حرفه‌ای: سوسک‌ها باکتری‌ها و آلرژن‌ها را منتشر می‌کنند. آن‌ها در محیط‌های گرم و مرطوب رشد می‌کنند. درمان حرفه‌ای اغلب برای کنترل مؤثر ضروری است."
+                data-ar="نصيحة محترفة: تنشر الصراصير البكتيريا ومسببات الحساسية. تزدهر في البيئات الدافئة والرطبة. العلاج المهني غالبًا ما يكون ضروريًا للسيطرة الفعالة."
               >
                 Pro Tip: Cockroaches spread bacteria and allergens. They thrive
                 in warm, moist environments. Professional treatment is often
@@ -2287,7 +2497,13 @@
             <div class="service-card" data-service="rats">
               <div class="service-info">
                 <div class="service-details">
-                  <strong data-en="Rats" data-fr="Rats">Rats</strong>
+                  <strong data-en="Rats" data-fr="Rats"
+                    data-es="Ratas"
+                    data-zh="大鼠"
+                    data-it="Ratti"
+                    data-fa="موش صحرایی"
+                    data-ar="جرذان"
+                  >Rats</strong>
                   <img
                     src="images/rats.jpeg"
                     alt="Rats"
@@ -2300,6 +2516,11 @@
                     data-severity="low"
                     data-en="Low"
                     data-fr="Faible"
+                    data-es="Bajo"
+                    data-zh="低"
+                    data-it="Basso"
+                    data-fa="کم"
+                    data-ar="منخفض"
                   >
                     Low
                   </button>
@@ -2308,6 +2529,11 @@
                     data-severity="medium"
                     data-en="Medium"
                     data-fr="Moyen"
+                    data-es="Medio"
+                    data-zh="中"
+                    data-it="Medio"
+                    data-fa="متوسط"
+                    data-ar="متوسط"
                   >
                     Medium
                   </button>
@@ -2316,6 +2542,11 @@
                     data-severity="high"
                     data-en="High"
                     data-fr="Élevé"
+                    data-es="Alto"
+                    data-zh="高"
+                    data-it="Alto"
+                    data-fa="زیاد"
+                    data-ar="مرتفع"
                   >
                     High
                   </button>
@@ -2324,6 +2555,11 @@
                     data-severity="no-idea"
                     data-en="No idea"
                     data-fr="Aucune idée"
+                    data-es="No sé"
+                    data-zh="不确定"
+                    data-it="Non so"
+                    data-fa="نمی‌دانم"
+                    data-ar="لا أعرف"
                   >
                     No idea
                   </button>
@@ -2333,6 +2569,11 @@
                 class="pro-tip"
                 data-en="Pro Tip: Rats can transmit diseases and damage property. Sealing entry points is the most effective long-term solution."
                 data-fr="Conseil Pro: Les rats peuvent transmettre des maladies et endommager la propriété. Sceller les points d'entrée est la solution la plus efficace à long terme."
+                data-es="Consejo Profesional: Las ratas pueden transmitir enfermedades y dañar la propiedad. Sellar los puntos de entrada es la solución más efectiva a largo plazo."
+                data-zh="专业提示：大鼠可能传播疾病并损坏财产。密封入口点是最有效的长期解决方案。"
+                data-it="Consiglio Professionale: I ratti possono trasmettere malattie e danneggiare la proprietà. Sigillare i punti di ingresso è la soluzione più efficace a lungo termine."
+                data-fa="نکته حرفه‌ای: موش‌های صحرایی می‌توانند بیماری‌ها را منتقل کنند و به اموال آسیب برسانند. مسدود کردن نقاط ورود مؤثرترین راه‌حل بلندمدت است."
+                data-ar="نصيحة محترفة: يمكن للجرذان نقل الأمراض والإضرار بالممتلكات. إغلاق نقاط الدخول هو الحل الأكثر فعالية على المدى الطويل."
               >
                 Pro Tip: Rats can transmit diseases and damage property. Sealing
                 entry points is the most effective long-term solution.
@@ -2342,7 +2583,13 @@
             <div class="service-card" data-service="wasps">
               <div class="service-info">
                 <div class="service-details">
-                  <strong data-en="Wasps" data-fr="Guêpes">Wasps</strong>
+                  <strong data-en="Wasps" data-fr="Guêpes"
+                    data-es="Avispas"
+                    data-zh="黄蜂"
+                    data-it="Vespe"
+                    data-fa="زنبور"
+                    data-ar="دبابير"
+                  >Wasps</strong>
                   <img
                     src="images/wasps.jpeg"
                     alt="Wasps"
@@ -2355,6 +2602,11 @@
                     data-severity="low"
                     data-en="Low"
                     data-fr="Faible"
+                    data-es="Bajo"
+                    data-zh="低"
+                    data-it="Basso"
+                    data-fa="کم"
+                    data-ar="منخفض"
                   >
                     Low
                   </button>
@@ -2363,6 +2615,11 @@
                     data-severity="medium"
                     data-en="Medium"
                     data-fr="Moyen"
+                    data-es="Medio"
+                    data-zh="中"
+                    data-it="Medio"
+                    data-fa="متوسط"
+                    data-ar="متوسط"
                   >
                     Medium
                   </button>
@@ -2371,6 +2628,11 @@
                     data-severity="high"
                     data-en="High"
                     data-fr="Élevé"
+                    data-es="Alto"
+                    data-zh="高"
+                    data-it="Alto"
+                    data-fa="زیاد"
+                    data-ar="مرتفع"
                   >
                     High
                   </button>
@@ -2379,6 +2641,11 @@
                     data-severity="no-idea"
                     data-en="No idea"
                     data-fr="Aucune idée"
+                    data-es="No sé"
+                    data-zh="不确定"
+                    data-it="Non so"
+                    data-fa="نمی‌دانم"
+                    data-ar="لا أعرف"
                   >
                     No idea
                   </button>
@@ -2388,6 +2655,11 @@
                 class="pro-tip"
                 data-en="Pro Tip: Wasps can be aggressive when their nest is threatened. Professional removal is recommended for safety."
                 data-fr="Conseil Pro: Les guêpes peuvent être agressives lorsque leur nid est menacé. L'enlèvement professionnel est recommandé pour la sécurité."
+                data-es="Consejo Profesional: Las avispas pueden ser agresivas cuando su nido está amenazado. Se recomienda la eliminación profesional por seguridad."
+                data-zh="专业提示：当蜂巢受到威胁时，黄蜂可能会变得具有攻击性。为了安全起见，建议专业清除。"
+                data-it="Consiglio Professionale: Le vespe possono essere aggressive quando il loro nido è minacciato. Si raccomanda la rimozione professionale per sicurezza."
+                data-fa="نکته حرفه‌ای: زنبورها زمانی که لانه آن‌ها تهدید می‌شود می‌توانند پرخاشگر شوند. برای ایمنی، حذف حرفه‌ای توصیه می‌شود."
+                data-ar="نصيحة محترفة: يمكن أن تكون الدبابير عدوانية عندما يتعرض عشها للتهديد. يوصى بالإزالة المهنية من أجل السلامة."
               >
                 Pro Tip: Wasps can be aggressive when their nest is threatened.
                 Professional removal is recommended for safety.
@@ -2398,6 +2670,11 @@
               <div class="service-info">
                 <div class="service-details">
                   <strong data-en="Bed Bugs" data-fr="Punaises de Lit"
+                    data-es="Chinches"
+                    data-zh="臭虫"
+                    data-it="Cimici dei Letti"
+                    data-fa="ساس"
+                    data-ar="بق الفراش"
                     >Bed Bugs</strong
                   >
                   <img
@@ -2412,6 +2689,11 @@
                     data-severity="low"
                     data-en="Low"
                     data-fr="Faible"
+                    data-es="Bajo"
+                    data-zh="低"
+                    data-it="Basso"
+                    data-fa="کم"
+                    data-ar="منخفض"
                   >
                     Low
                   </button>
@@ -2420,6 +2702,11 @@
                     data-severity="medium"
                     data-en="Medium"
                     data-fr="Moyen"
+                    data-es="Medio"
+                    data-zh="中"
+                    data-it="Medio"
+                    data-fa="متوسط"
+                    data-ar="متوسط"
                   >
                     Medium
                   </button>
@@ -2428,6 +2715,11 @@
                     data-severity="high"
                     data-en="High"
                     data-fr="Élevé"
+                    data-es="Alto"
+                    data-zh="高"
+                    data-it="Alto"
+                    data-fa="زیاد"
+                    data-ar="مرتفع"
                   >
                     High
                   </button>
@@ -2436,6 +2728,11 @@
                     data-severity="no-idea"
                     data-en="No idea"
                     data-fr="Aucune idée"
+                    data-es="No sé"
+                    data-zh="不确定"
+                    data-it="Non so"
+                    data-fa="نمی‌دانم"
+                    data-ar="لا أعرف"
                   >
                     No idea
                   </button>
@@ -2455,17 +2752,32 @@
                 <strong
                   data-en="Treatment Pricing:"
                   data-fr="Prix du Traitement:"
+                  data-es="Precios del Tratamiento:"
+                  data-zh="治疗价格："
+                  data-it="Prezzi del Trattamento:"
+                  data-fa="قیمت درمان:"
+                  data-ar="أسعار العلاج:"
                   >Treatment Pricing:</strong
                 ><br />
                 <span
                   data-en="3½ rooms (Apartments): $150 | 4½ rooms (Townhouse): $200 | 5½ rooms (Large Homes): $250"
                   data-fr="3½ pièces (Appartements): 150$ | 4½ pièces (Maisons de ville): 200$ | 5½ pièces (Grandes maisons): 250$"
+                  data-es="3½ habitaciones (Apartamentos): $150 | 4½ habitaciones (Casa adosada): $200 | 5½ habitaciones (Casas grandes): $250"
+                  data-zh="3½ 房间（公寓）：$150 | 4½ 房间（联排别墅）：$200 | 5½ 房间（大型住宅）：$250"
+                  data-it="3½ stanze (Appartamenti): $150 | 4½ stanze (Casa a schiera): $200 | 5½ stanze (Case grandi): $250"
+                  data-fa="3½ اتاق (آپارتمان‌ها): 150$ | 4½ اتاق (خانه‌های ردیفی): 200$ | 5½ اتاق (خانه‌های بزرگ): 250$"
+                  data-ar="3½ غرف (شقق): 150$ | 4½ غرف (منازل متلاصقة): 200$ | 5½ غرف (منازل كبيرة): 250$"
                   >3½ rooms (Apartments): $150 | 4½ rooms (Townhouse): $200 | 5½
                   rooms (Large Homes): $250</span
                 ><br />
                 <strong
                   data-en="2nd Treatment: $75 (if needed)"
                   data-fr="2e Traitement: 75$ (si nécessaire)"
+                  data-es="2º Tratamiento: $75 (si es necesario)"
+                  data-zh="第二次治疗：$75（如果需要）"
+                  data-it="2° Trattamento: $75 (se necessario)"
+                  data-fa="درمان دوم: 75$ (در صورت نیاز)"
+                  data-ar="العلاج الثاني: 75$ (إذا لزم الأمر)"
                   >2nd Treatment: $75 (if needed)</strong
                 >
               </div>
@@ -2473,6 +2785,11 @@
                 class="pro-tip"
                 data-en="Pro Tip: Bed bugs are notoriously difficult to eliminate. Early detection and professional treatment are essential for successful eradication. We offer a follow-up treatment at $75 if needed."
                 data-fr="Conseil Pro: Les punaises de lit sont notoirement difficiles à éliminer. La détection précoce et le traitement professionnel sont essentiels pour une éradication réussie. Nous offrons un traitement de suivi à 75$ si nécessaire."
+                data-es="Consejo Profesional: Las chinches son notoriamente difíciles de eliminar. La detección temprana y el tratamiento profesional son esenciales para una erradicación exitosa. Ofrecemos un tratamiento de seguimiento a $75 si es necesario."
+                data-zh="专业提示：臭虫很难消灭。早期发现和专业治疗对于成功根除至关重要。如果需要，我们提供75美元的后续治疗。"
+                data-it="Consiglio Professionale: Le cimici dei letti sono notoriamente difficili da eliminare. Il rilevamento precoce e il trattamento professionale sono essenziali per un'eradicazione di successo. Offriamo un trattamento di follow-up a $75 se necessario."
+                data-fa="نکته حرفه‌ای: ساس‌ها معمولاً از بین بردن آن‌ها دشوار است. تشخیص زودهنگام و درمان حرفه‌ای برای ریشه‌کنی موفق ضروری است. ما در صورت نیاز درمان پیگیری به قیمت 75 دلار ارائه می‌دهیم."
+                data-ar="نصيحة محترفة: من الصعب جدًا القضاء على بق الفراش. الاكتشاف المبكر والعلاج المهني ضروريان للإبادة الناجحة. نحن نقدم علاجًا متابعة بقيمة 75 دولارًا إذا لزم الأمر."
               >
                 Pro Tip: Bed bugs are notoriously difficult to eliminate. Early
                 detection and professional treatment are essential for
@@ -2484,7 +2801,13 @@
             <div class="service-card" data-service="fleas">
               <div class="service-info">
                 <div class="service-details">
-                  <strong data-en="Fleas" data-fr="Puces">Fleas</strong>
+                  <strong data-en="Fleas" data-fr="Puces"
+                    data-es="Pulgas"
+                    data-zh="跳蚤"
+                    data-it="Pulci"
+                    data-fa="کک"
+                    data-ar="براغيث"
+                  >Fleas</strong>
                   <img
                     src="images/fleas.jpeg"
                     alt="Fleas"
@@ -2497,6 +2820,11 @@
                     data-severity="low"
                     data-en="Low"
                     data-fr="Faible"
+                    data-es="Bajo"
+                    data-zh="低"
+                    data-it="Basso"
+                    data-fa="کم"
+                    data-ar="منخفض"
                   >
                     Low
                   </button>
@@ -2505,6 +2833,11 @@
                     data-severity="medium"
                     data-en="Medium"
                     data-fr="Moyen"
+                    data-es="Medio"
+                    data-zh="中"
+                    data-it="Medio"
+                    data-fa="متوسط"
+                    data-ar="متوسط"
                   >
                     Medium
                   </button>
@@ -2513,6 +2846,11 @@
                     data-severity="high"
                     data-en="High"
                     data-fr="Élevé"
+                    data-es="Alto"
+                    data-zh="高"
+                    data-it="Alto"
+                    data-fa="زیاد"
+                    data-ar="مرتفع"
                   >
                     High
                   </button>
@@ -2521,6 +2859,11 @@
                     data-severity="no-idea"
                     data-en="No idea"
                     data-fr="Aucune idée"
+                    data-es="No sé"
+                    data-zh="不确定"
+                    data-it="Non so"
+                    data-fa="نمی‌دانم"
+                    data-ar="لا أعرف"
                   >
                     No idea
                   </button>
@@ -2530,6 +2873,11 @@
                 class="pro-tip"
                 data-en="Pro Tip: Fleas can jump long distances and reproduce rapidly. Pet treatment and environmental control are both necessary."
                 data-fr="Conseil Pro: Les puces peuvent sauter de longues distances et se reproduire rapidement. Le traitement des animaux et le contrôle environnemental sont tous deux nécessaires."
+                data-es="Consejo Profesional: Las pulgas pueden saltar largas distancias y reproducirse rápidamente. El tratamiento de las mascotas y el control ambiental son ambos necesarios."
+                data-zh="专业提示：跳蚤可以跳远距离并迅速繁殖。宠物治疗和环境控制都是必要的。"
+                data-it="Consiglio Professionale: Le pulci possono saltare lunghe distanze e riprodursi rapidamente. Il trattamento degli animali domestici e il controllo ambientale sono entrambi necessari."
+                data-fa="نکته حرفه‌ای: کک‌ها می‌توانند مسافت‌های طولانی بپرند و به سرعت تولید مثل کنند. درمان حیوانات خانگی و کنترل محیطی هر دو ضروری هستند."
+                data-ar="نصيحة محترفة: يمكن للبراغيث القفز لمسافات طويلة والتكاثر بسرعة. علاج الحيوانات الأليفة والتحكم في البيئة كلاهما ضروريان."
               >
                 Pro Tip: Fleas can jump long distances and reproduce rapidly.
                 Pet treatment and environmental control are both necessary.
@@ -2540,6 +2888,11 @@
               <div class="service-info">
                 <div class="service-details">
                   <strong data-en="Silverfish" data-fr="Poissons d'Argent"
+                    data-es="Pececillos de Plata"
+                    data-zh="蠹虫"
+                    data-it="Pesciolini d'Argento"
+                    data-fa="ماهی نقره‌ای"
+                    data-ar="سمك فضي"
                     >Silverfish</strong
                   >
                   <img
@@ -2554,6 +2907,11 @@
                     data-severity="low"
                     data-en="Low"
                     data-fr="Faible"
+                    data-es="Bajo"
+                    data-zh="低"
+                    data-it="Basso"
+                    data-fa="کم"
+                    data-ar="منخفض"
                   >
                     Low
                   </button>
@@ -2562,6 +2920,11 @@
                     data-severity="medium"
                     data-en="Medium"
                     data-fr="Moyen"
+                    data-es="Medio"
+                    data-zh="中"
+                    data-it="Medio"
+                    data-fa="متوسط"
+                    data-ar="متوسط"
                   >
                     Medium
                   </button>
@@ -2570,6 +2933,11 @@
                     data-severity="high"
                     data-en="High"
                     data-fr="Élevé"
+                    data-es="Alto"
+                    data-zh="高"
+                    data-it="Alto"
+                    data-fa="زیاد"
+                    data-ar="مرتفع"
                   >
                     High
                   </button>
@@ -2578,6 +2946,11 @@
                     data-severity="no-idea"
                     data-en="No idea"
                     data-fr="Aucune idée"
+                    data-es="No sé"
+                    data-zh="不确定"
+                    data-it="Non so"
+                    data-fa="نمی‌دانم"
+                    data-ar="لا أعرف"
                   >
                     No idea
                   </button>
@@ -2587,6 +2960,11 @@
                 class="pro-tip"
                 data-en="Pro Tip: Silverfish thrive in humid environments and feed on starchy materials. Reducing moisture and removing food sources helps control them."
                 data-fr="Conseil Pro: Les poissons d'argent prospèrent dans des environnements humides et se nourrissent de matières féculentes. Réduire l'humidité et éliminer les sources de nourriture aide à les contrôler."
+                data-es="Consejo Profesional: Los pececillos de plata prosperan en ambientes húmedos y se alimentan de materiales con almidón. Reducir la humedad y eliminar las fuentes de alimento ayuda a controlarlos."
+                data-zh="专业提示：蠹虫在潮湿环境中繁殖，以淀粉质材料为食。减少湿度和去除食物来源有助于控制它们。"
+                data-it="Consiglio Professionale: I pesciolini d'argento prosperano in ambienti umidi e si nutrono di materiali amidacei. Ridurre l'umidità e rimuovere le fonti di cibo aiuta a controllarli."
+                data-fa="نکته حرفه‌ای: ماهی‌های نقره‌ای در محیط‌های مرطوب رشد می‌کنند و از مواد نشاسته‌ای تغذیه می‌کنند. کاهش رطوبت و حذف منابع غذایی به کنترل آن‌ها کمک می‌کند."
+                data-ar="نصيحة محترفة: تزدهر الأسماك الفضية في البيئات الرطبة وتتغذى على المواد النشوية. تقليل الرطوبة وإزالة مصادر الطعام يساعد على السيطرة عليها."
               >
                 Pro Tip: Silverfish thrive in humid environments and feed on
                 starchy materials. Reducing moisture and removing food sources
@@ -2598,6 +2976,11 @@
               <div class="service-info">
                 <div class="service-details">
                   <strong data-en="Earwigs" data-fr="Perce-Oreilles"
+                    data-es="Tijeretas"
+                    data-zh="蠼螋"
+                    data-it="Forbicine"
+                    data-fa="گوش‌خزک"
+                    data-ar="إبرة الأذن"
                     >Earwigs</strong
                   >
                   <img
@@ -2612,6 +2995,11 @@
                     data-severity="low"
                     data-en="Low"
                     data-fr="Faible"
+                    data-es="Bajo"
+                    data-zh="低"
+                    data-it="Basso"
+                    data-fa="کم"
+                    data-ar="منخفض"
                   >
                     Low
                   </button>
@@ -2620,6 +3008,11 @@
                     data-severity="medium"
                     data-en="Medium"
                     data-fr="Moyen"
+                    data-es="Medio"
+                    data-zh="中"
+                    data-it="Medio"
+                    data-fa="متوسط"
+                    data-ar="متوسط"
                   >
                     Medium
                   </button>
@@ -2628,6 +3021,11 @@
                     data-severity="high"
                     data-en="High"
                     data-fr="Élevé"
+                    data-es="Alto"
+                    data-zh="高"
+                    data-it="Alto"
+                    data-fa="زیاد"
+                    data-ar="مرتفع"
                   >
                     High
                   </button>
@@ -2636,6 +3034,11 @@
                     data-severity="no-idea"
                     data-en="No idea"
                     data-fr="Aucune idée"
+                    data-es="No sé"
+                    data-zh="不确定"
+                    data-it="Non so"
+                    data-fa="نمی‌دانم"
+                    data-ar="لا أعرف"
                   >
                     No idea
                   </button>
@@ -2645,6 +3048,11 @@
                 class="pro-tip"
                 data-en="Pro Tip: Earwigs prefer damp, dark spaces and are mostly active at night. Eliminating moisture and hiding spots reduces their population."
                 data-fr="Conseil Pro: Les perce-oreilles préfèrent les espaces humides et sombres et sont principalement actifs la nuit. Éliminer l'humidité et les cachettes réduit leur population."
+                data-es="Consejo Profesional: Las tijeretas prefieren espacios húmedos y oscuros y son principalmente activas por la noche. Eliminar la humedad y los escondites reduce su población."
+                data-zh="专业提示：蠼螋喜欢潮湿、黑暗的空间，主要在夜间活动。消除湿度和藏身之处可以减少它们的数量。"
+                data-it="Consiglio Professionale: Le forbicine preferiscono spazi umidi e bui e sono per lo più attive di notte. Eliminare l'umidità e i nascondigli riduce la loro popolazione."
+                data-fa="نکته حرفه‌ای: گوش‌خزک‌ها فضاهای مرطوب و تاریک را ترجیح می‌دهند و بیشتر در شب فعال هستند. از بین بردن رطوبت و مکان‌های مخفی جمعیت آن‌ها را کاهش می‌دهد."
+                data-ar="نصيحة محترفة: تفضل إبر الأذن الأماكن الرطبة والمظلمة وتكون نشطة في الغالب في الليل. إزالة الرطوبة وأماكن الاختباء يقلل من أعدادها."
               >
                 Pro Tip: Earwigs prefer damp, dark spaces and are mostly active
                 at night. Eliminating moisture and hiding spots reduces their
@@ -2656,6 +3064,11 @@
               <div class="service-info">
                 <div class="service-details">
                   <strong data-en="Centipedes" data-fr="Mille-Pattes"
+                    data-es="Ciempiés"
+                    data-zh="蜈蚣"
+                    data-it="Centopiedi"
+                    data-fa="صدپا"
+                    data-ar="حريش"
                     >Centipedes</strong
                   >
                   <img
@@ -2670,6 +3083,11 @@
                     data-severity="low"
                     data-en="Low"
                     data-fr="Faible"
+                    data-es="Bajo"
+                    data-zh="低"
+                    data-it="Basso"
+                    data-fa="کم"
+                    data-ar="منخفض"
                   >
                     Low
                   </button>
@@ -2678,6 +3096,11 @@
                     data-severity="medium"
                     data-en="Medium"
                     data-fr="Moyen"
+                    data-es="Medio"
+                    data-zh="中"
+                    data-it="Medio"
+                    data-fa="متوسط"
+                    data-ar="متوسط"
                   >
                     Medium
                   </button>
@@ -2686,6 +3109,11 @@
                     data-severity="high"
                     data-en="High"
                     data-fr="Élevé"
+                    data-es="Alto"
+                    data-zh="高"
+                    data-it="Alto"
+                    data-fa="زیاد"
+                    data-ar="مرتفع"
                   >
                     High
                   </button>
@@ -2694,6 +3122,11 @@
                     data-severity="no-idea"
                     data-en="No idea"
                     data-fr="Aucune idée"
+                    data-es="No sé"
+                    data-zh="不确定"
+                    data-it="Non so"
+                    data-fa="نمی‌دانم"
+                    data-ar="لا أعرف"
                   >
                     No idea
                   </button>
@@ -2703,6 +3136,11 @@
                 class="pro-tip"
                 data-en="Pro Tip: Centipedes hunt other insects and prefer moist environments. Reducing humidity and sealing entry points helps control them."
                 data-fr="Conseil Pro: Les mille-pattes chassent d'autres insectes et préfèrent les environnements humides. Réduire l'humidité et sceller les points d'entrée aide à les contrôler."
+                data-es="Consejo Profesional: Los ciempiés cazan otros insectos y prefieren ambientes húmedos. Reducir la humedad y sellar los puntos de entrada ayuda a controlarlos."
+                data-zh="专业提示：蜈蚣捕食其他昆虫，喜欢潮湿的环境。减少湿度和密封入口点有助于控制它们。"
+                data-it="Consiglio Professionale: I centopiedi cacciano altri insetti e preferiscono ambienti umidi. Ridurre l'umidità e sigillare i punti di ingresso aiuta a controllarli."
+                data-fa="نکته حرفه‌ای: صدپاها حشرات دیگر را شکار می‌کنند و محیط‌های مرطوب را ترجیح می‌دهند. کاهش رطوبت و مسدود کردن نقاط ورود به کنترل آن‌ها کمک می‌کند."
+                data-ar="نصيحة محترفة: تصطاد الحريش الحشرات الأخرى وتفضل البيئات الرطبة. تقليل الرطوبة وإغلاق نقاط الدخول يساعد على السيطرة عليها."
               >
                 Pro Tip: Centipedes hunt other insects and prefer moist
                 environments. Reducing humidity and sealing entry points helps
@@ -2716,6 +3154,11 @@
                   <strong
                     data-en="Carpenter Ants"
                     data-fr="Fourmis Charpentières"
+                    data-es="Hormigas Carpinteras"
+                    data-zh="木蚁"
+                    data-it="Formiche Carpentiere"
+                    data-fa="مورچه‌های نجار"
+                    data-ar="نمل نجار"
                     >Carpenter Ants</strong
                   >
                   <img
@@ -2730,6 +3173,11 @@
                     data-severity="low"
                     data-en="Low"
                     data-fr="Faible"
+                    data-es="Bajo"
+                    data-zh="低"
+                    data-it="Basso"
+                    data-fa="کم"
+                    data-ar="منخفض"
                   >
                     Low
                   </button>
@@ -2738,6 +3186,11 @@
                     data-severity="medium"
                     data-en="Medium"
                     data-fr="Moyen"
+                    data-es="Medio"
+                    data-zh="中"
+                    data-it="Medio"
+                    data-fa="متوسط"
+                    data-ar="متوسط"
                   >
                     Medium
                   </button>
@@ -2746,6 +3199,11 @@
                     data-severity="high"
                     data-en="High"
                     data-fr="Élevé"
+                    data-es="Alto"
+                    data-zh="高"
+                    data-it="Alto"
+                    data-fa="زیاد"
+                    data-ar="مرتفع"
                   >
                     High
                   </button>
@@ -2754,6 +3212,11 @@
                     data-severity="no-idea"
                     data-en="No idea"
                     data-fr="Aucune idée"
+                    data-es="No sé"
+                    data-zh="不确定"
+                    data-it="Non so"
+                    data-fa="نمی‌دانم"
+                    data-ar="لا أعرف"
                   >
                     No idea
                   </button>
@@ -2763,6 +3226,11 @@
                 class="pro-tip"
                 data-en="Pro Tip: Carpenter ants damage wood structures by excavating galleries. Quick professional treatment prevents extensive structural damage."
                 data-fr="Conseil Pro: Les fourmis charpentières endommagent les structures en bois en creusant des galeries. Un traitement professionnel rapide prévient des dommages structurels importants."
+                data-es="Consejo Profesional: Las hormigas carpinteras dañan las estructuras de madera excavando galerías. El tratamiento profesional rápido previene daños estructurales extensos."
+                data-zh="专业提示：木蚁通过挖掘隧道破坏木质结构。快速的专业治疗可以防止广泛的结构损坏。"
+                data-it="Consiglio Professionale: Le formiche carpentiere danneggiano le strutture in legno scavando gallerie. Un trattamento professionale rapido previene danni strutturali estesi."
+                data-fa="نکته حرفه‌ای: مورچه‌های نجار با حفر گالری‌ها به سازه‌های چوبی آسیب می‌زنند. درمان حرفه‌ای سریع از آسیب ساختاری گسترده جلوگیری می‌کند."
+                data-ar="نصيحة محترفة: يدمر النمل النجار الهياكل الخشبية عن طريق حفر الأنفاق. العلاج المهني السريع يمنع الأضرار الهيكلية الواسعة."
               >
                 Pro Tip: Carpenter ants damage wood structures by excavating
                 galleries. Quick professional treatment prevents extensive
@@ -2774,6 +3242,11 @@
               <div class="service-info">
                 <div class="service-details">
                   <strong data-en="Fruit Flies" data-fr="Mouches à Fruits"
+                    data-es="Moscas de la Fruta"
+                    data-zh="果蝇"
+                    data-it="Moscerini della Frutta"
+                    data-fa="مگس میوه"
+                    data-ar="ذباب الفاكهة"
                     >Fruit Flies</strong
                   >
                   <img
@@ -2788,6 +3261,11 @@
                     data-severity="low"
                     data-en="Low"
                     data-fr="Faible"
+                    data-es="Bajo"
+                    data-zh="低"
+                    data-it="Basso"
+                    data-fa="کم"
+                    data-ar="منخفض"
                   >
                     Low
                   </button>
@@ -2796,6 +3274,11 @@
                     data-severity="medium"
                     data-en="Medium"
                     data-fr="Moyen"
+                    data-es="Medio"
+                    data-zh="中"
+                    data-it="Medio"
+                    data-fa="متوسط"
+                    data-ar="متوسط"
                   >
                     Medium
                   </button>
@@ -2804,6 +3287,11 @@
                     data-severity="high"
                     data-en="High"
                     data-fr="Élevé"
+                    data-es="Alto"
+                    data-zh="高"
+                    data-it="Alto"
+                    data-fa="زیاد"
+                    data-ar="مرتفع"
                   >
                     High
                   </button>
@@ -2812,6 +3300,11 @@
                     data-severity="no-idea"
                     data-en="No idea"
                     data-fr="Aucune idée"
+                    data-es="No sé"
+                    data-zh="不确定"
+                    data-it="Non so"
+                    data-fa="نمی‌دانم"
+                    data-ar="لا أعرف"
                   >
                     No idea
                   </button>
@@ -2821,6 +3314,11 @@
                 class="pro-tip"
                 data-en="Pro Tip: Fruit flies breed rapidly in fermenting organic matter. Removing breeding sources and thorough cleaning are essential for control."
                 data-fr="Conseil Pro: Les mouches à fruits se reproduisent rapidement dans la matière organique en fermentation. Éliminer les sources de reproduction et un nettoyage approfondi sont essentiels pour le contrôle."
+                data-es="Consejo Profesional: Las moscas de la fruta se reproducen rápidamente en materia orgánica en fermentación. Eliminar las fuentes de reproducción y una limpieza exhaustiva son esenciales para el control."
+                data-zh="专业提示：果蝇在发酵的有机物中迅速繁殖。清除繁殖来源和彻底清洁对于控制至关重要。"
+                data-it="Consiglio Professionale: I moscerini della frutta si riproducono rapidamente nella materia organica in fermentazione. Rimuovere le fonti di riproduzione e una pulizia approfondita sono essenziali per il controllo."
+                data-fa="نکته حرفه‌ای: مگس‌های میوه به سرعت در مواد آلی در حال تخمیر تولید مثل می‌کنند. حذف منابع تولید مثل و تمیز کردن کامل برای کنترل ضروری است."
+                data-ar="نصيحة محترفة: تتكاثر ذباب الفاكهة بسرعة في المواد العضوية المتخمرة. إزالة مصادر التكاثر والتنظيف الشامل ضروريان للسيطرة."
               >
                 Pro Tip: Fruit flies breed rapidly in fermenting organic matter.
                 Removing breeding sources and thorough cleaning are essential
@@ -2833,12 +3331,23 @@
 
       <!-- Step 3: Quote -->
       <div class="step" id="step3">
-        <h2 data-en="Your Quote" data-fr="Votre Devis">Your Quote</h2>
+        <h2 data-en="Your Quote" data-fr="Votre Devis"
+          data-es="Su Cotización"
+          data-zh="您的报价"
+          data-it="Il Tuo Preventivo"
+          data-fa="پیشنهاد قیمت شما"
+          data-ar="عرض الأسعار الخاص بك"
+        >Your Quote</h2>
 
         <div
           class="disclaimer"
           data-en="This is a real-time estimate. Prices are subject to a final on-site inspection."
           data-fr="Ceci est une estimation en temps réel. Les prix sont sujets à une inspection finale sur place."
+          data-es="Esta es una estimación en tiempo real. Los precios están sujetos a una inspección final en el sitio."
+          data-zh="这是实时估算。价格取决于最终的现场检查。"
+          data-it="Questa è una stima in tempo reale. I prezzi sono soggetti a un'ispezione finale in loco."
+          data-fa="این یک برآورد زمان واقعی است. قیمت‌ها منوط به بازرسی نهایی در محل هستند."
+          data-ar="هذا تقدير في الوقت الفعلي. الأسعار خاضعة للفحص النهائي في الموقع."
         >
           This is a real-time estimate. Prices are subject to a final on-site
           inspection.
@@ -2848,6 +3357,11 @@
           <label
             data-en="Promo Code (Optional)"
             data-fr="Code Promo (Optionnel)"
+            data-es="Código Promocional (Opcional)"
+            data-zh="促销代码（可选）"
+            data-it="Codice Promozionale (Opzionale)"
+            data-fa="کد تخفیف (اختیاری)"
+            data-ar="رمز الترويج (اختياري)"
             >Promo Code (Optional)</label
           >
           <div style="display: flex; gap: 10px">
@@ -2862,6 +3376,11 @@
               onclick="applyPromoCode()"
               data-en="Apply"
               data-fr="Appliquer"
+              data-es="Aplicar"
+              data-zh="应用"
+              data-it="Applica"
+              data-fa="اعمال"
+              data-ar="تطبيق"
             >
               Apply
             </button>
@@ -2871,6 +3390,11 @@
             id="promoSuccess"
             data-en="Promo code applied!"
             data-fr="Code promo appliqué!"
+            data-es="¡Código promocional aplicado!"
+            data-zh="促销代码已应用！"
+            data-it="Codice promozionale applicato!"
+            data-fa="کد تخفیف اعمال شد!"
+            data-ar="تم تطبيق رمز الترويج!"
           >
             Promo code applied!
           </div>
@@ -2879,6 +3403,11 @@
             id="promoError"
             data-en="Invalid promo code"
             data-fr="Code promo invalide"
+            data-es="Código promocional inválido"
+            data-zh="无效的促销代码"
+            data-it="Codice promozionale non valido"
+            data-fa="کد تخفیف نامعتبر"
+            data-ar="رمز ترويج غير صالح"
           >
             Invalid promo code
           </div>
@@ -2893,6 +3422,11 @@
           onclick="copyQuote()"
           data-en="Copy Quote & Email Us"
           data-fr="Copier le Devis & Nous Envoyer un Email"
+          data-es="Copiar Cotización y Enviarnos un Correo"
+          data-zh="复制报价并给我们发邮件"
+          data-it="Copia Preventivo e Inviaci un'Email"
+          data-fa="کپی پیشنهاد قیمت و ایمیل به ما"
+          data-ar="نسخ عرض الأسعار ومراسلتنا عبر البريد الإلكتروني"
         >
           Copy Quote & Email Us
         </button>
@@ -2901,6 +3435,11 @@
           id="copySuccess"
           data-en="Copied to clipboard!"
           data-fr="Copié dans le presse-papiers!"
+          data-es="¡Copiado al portapapeles!"
+          data-zh="已复制到剪贴板！"
+          data-it="Copiato negli appunti!"
+          data-fa="در کلیپ‌بورد کپی شد!"
+          data-ar="تم النسخ إلى الحافظة!"
         >
           Copied to clipboard!
         </div>
@@ -2912,6 +3451,11 @@
             <span
               data-en="(Response within 1 hour!)"
               data-fr="(Réponse en moins d'une heure!)"
+              data-es="(¡Respuesta en 1 hora!)"
+              data-zh="（1小时内回复！）"
+              data-it="(Risposta entro 1 ora!)"
+              data-fa="(پاسخ ظرف 1 ساعت!)"
+              data-ar="(الرد خلال ساعة واحدة!)"
               >(Response within 1 hour!)</span
             >
           </div>
@@ -2920,7 +3464,13 @@
         </div>
 
         <div class="next-steps">
-          <h4 data-en="📋 Next Steps:" data-fr="📋 Prochaines Étapes:">
+          <h4 data-en="📋 Next Steps:" data-fr="📋 Prochaines Étapes:"
+            data-es="📋 Próximos Pasos:"
+            data-zh="📋 下一步："
+            data-it="📋 Prossimi Passi:"
+            data-fa="📋 مراحل بعدی:"
+            data-ar="📋 الخطوات التالية:"
+          >
             📋 Next Steps:
           </h4>
           <div class="steps-list">
@@ -2929,6 +3479,11 @@
               <span
                 data-en="After clicking 'Copy Quote', paste it into your email app or WhatsApp"
                 data-fr="Après avoir cliqué sur 'Copier le Devis', collez-le dans votre app email ou WhatsApp"
+                data-es="Después de hacer clic en 'Copiar Cotización', péguelo en su aplicación de correo electrónico o WhatsApp"
+                data-zh="点击"复制报价"后，将其粘贴到您的电子邮件应用程序或 WhatsApp 中"
+                data-it="Dopo aver cliccato su 'Copia Preventivo', incollalo nella tua app email o WhatsApp"
+                data-fa="پس از کلیک روی 'کپی پیشنهاد قیمت'، آن را در برنامه ایمیل یا WhatsApp خود جای‌گذاری کنید"
+                data-ar="بعد النقر على 'نسخ عرض الأسعار'، الصقه في تطبيق البريد الإلكتروني أو WhatsApp"
                 >After clicking 'Copy Quote', paste it into your email app or
                 WhatsApp</span
               >
@@ -2938,6 +3493,11 @@
               <span
                 data-en="Send to snpest20@gmail.com, call (514) 582-4400, or WhatsApp +1 (514) 582-4400"
                 data-fr="Envoyez à snpest20@gmail.com, appelez (514) 582-4400, ou WhatsApp +1 (514) 582-4400"
+                data-es="Envíe a snpest20@gmail.com, llame al (514) 582-4400 o WhatsApp +1 (514) 582-4400"
+                data-zh="发送至 snpest20@gmail.com，致电 (514) 582-4400，或 WhatsApp +1 (514) 582-4400"
+                data-it="Invia a snpest20@gmail.com, chiama (514) 582-4400 o WhatsApp +1 (514) 582-4400"
+                data-fa="به snpest20@gmail.com ارسال کنید، با (514) 582-4400 تماس بگیرید، یا WhatsApp +1 (514) 582-4400"
+                data-ar="أرسل إلى snpest20@gmail.com، اتصل بـ (514) 582-4400، أو WhatsApp +1 (514) 582-4400"
                 >Send to snpest20@gmail.com, call (514) 582-4400, or WhatsApp +1
                 (514) 582-4400</span
               >
@@ -2947,6 +3507,11 @@
               <span
                 data-en="Get your response within 1 hour via WhatsApp, phone, or email!"
                 data-fr="Recevez votre réponse en moins d'une heure via WhatsApp, téléphone ou email!"
+                data-es="¡Obtenga su respuesta en 1 hora a través de WhatsApp, teléfono o correo electrónico!"
+                data-zh="通过 WhatsApp、电话或电子邮件在 1 小时内收到回复！"
+                data-it="Ricevi la tua risposta entro 1 ora tramite WhatsApp, telefono o email!"
+                data-fa="پاسخ خود را ظرف 1 ساعت از طریق WhatsApp، تلفن یا ایمیل دریافت کنید!"
+                data-ar="احصل على ردك خلال ساعة واحدة عبر WhatsApp أو الهاتف أو البريد الإلكتروني!"
                 >Get your response within 1 hour via WhatsApp, phone, or
                 email!</span
               >
@@ -2956,6 +3521,11 @@
             <strong
               data-en="💬 Prefer WhatsApp? We're very responsive on WhatsApp for faster communication!"
               data-fr="💬 Préférez WhatsApp? Nous sommes très réactifs sur WhatsApp pour une communication plus rapide!"
+              data-es="💬 ¿Prefiere WhatsApp? ¡Somos muy receptivos en WhatsApp para una comunicación más rápida!"
+              data-zh="💬 更喜欢 WhatsApp？我们在 WhatsApp 上响应非常迅速，沟通更快！"
+              data-it="💬 Preferisci WhatsApp? Siamo molto reattivi su WhatsApp per una comunicazione più veloce!"
+              data-fa="💬 WhatsApp را ترجیح می‌دهید؟ ما در WhatsApp برای ارتباط سریع‌تر بسیار پاسخگو هستیم!"
+              data-ar="💬 تفضل WhatsApp؟ نحن سريعون جدًا في الرد على WhatsApp للتواصل الأسرع!"
               >💬 Prefer WhatsApp? We're very responsive on WhatsApp for faster
               communication!</strong
             >
@@ -3029,6 +3599,11 @@
         <p
           data-en="This tool provides an instant estimate. Follow the steps to build your quote. Please note that all online quotes are estimates and may be adjusted after a final on-site inspection."
           data-fr="Cet outil fournit une estimation instantanée. Suivez les étapes pour créer votre devis. Veuillez noter que tous les devis en ligne sont des estimations et peuvent être ajustés après une inspection finale sur place."
+          data-es="Esta herramienta proporciona una estimación instantánea. Siga los pasos para crear su cotización. Tenga en cuenta que todas las cotizaciones en línea son estimaciones y pueden ajustarse después de una inspección final en el sitio."
+          data-zh="此工具提供即时估算。按照步骤创建您的报价。请注意，所有在线报价都是估算，在最终现场检查后可能会进行调整。"
+          data-it="Questo strumento fornisce una stima istantanea. Segui i passaggi per creare il tuo preventivo. Si prega di notare che tutti i preventivi online sono stime e possono essere modificati dopo un'ispezione finale in loco."
+          data-fa="این ابزار یک برآورد فوری ارائه می‌دهد. مراحل را دنبال کنید تا پیشنهاد قیمت خود را بسازید. لطفاً توجه داشته باشید که همه پیشنهادات آنلاین برآوردی هستند و ممکن است پس از بازرسی نهایی در محل تعدیل شوند."
+          data-ar="توفر هذه الأداة تقديرًا فوريًا. اتبع الخطوات لإنشاء عرض الأسعار الخاص بك. يرجى ملاحظة أن جميع عروض الأسعار عبر الإنترنت هي تقديرات وقد يتم تعديلها بعد الفحص النهائي في الموقع."
         >
           This tool provides an instant estimate. Follow the steps to build your
           quote. Please note that all online quotes are estimates and may be
@@ -3039,6 +3614,11 @@
           style="margin-top: 16px; font-weight: 600; color: #2e8b57"
           data-en="All prices include Quebec GST (5%) and QST (9.975%) as required by law. Service available throughout Montreal and surrounding areas."
           data-fr="Tous les prix incluent la TPS du Québec (5%) et la TVQ (9,975%) comme requis par la loi. Service disponible dans tout Montréal et les régions environnantes."
+          data-es="Todos los precios incluyen el GST de Quebec (5%) y el QST (9.975%) según lo requerido por la ley. Servicio disponible en toda Montreal y áreas circundantes."
+          data-zh="所有价格包括魁北克省法律要求的 GST (5%) 和 QST (9.975%)。服务覆盖整个蒙特利尔及周边地区。"
+          data-it="Tutti i prezzi includono la GST del Quebec (5%) e la QST (9,975%) come richiesto dalla legge. Servizio disponibile in tutta Montreal e nelle aree circostanti."
+          data-fa="همه قیمت‌ها شامل GST کبک (5٪) و QST (9.975٪) طبق قانون است. خدمات در سراسر مونترال و مناطق اطراف در دسترس است."
+          data-ar="تشمل جميع الأسعار ضريبة GST في كيبيك (5٪) وضريبة QST (9.975٪) حسب ما يقتضيه القانون. الخدمة متاحة في جميع أنحاء مونتريال والمناطق المحيطة."
         >
           All prices include Quebec GST (5%) and QST (9.975%) as required by
           law. Service available throughout Montreal and surrounding areas.
@@ -3255,6 +3835,125 @@
             it: "Il nostro miglior valore! Riceverai uno sconto del 30% sul costo totale del servizio, fatturato mensilmente. Procedi a selezionare i parassiti per il tuo piano.",
             fa: "بهترین ارزش ما! شما 30% تخفیف از کل هزینه خدمات دریافت خواهید کرد که ماهانه صورتحساب می‌شود. برای انتخاب آفات برنامه خود ادامه دهید.",
             ar: "أفضل قيمة لدينا! ستحصل على خصم 30% من إجمالي تكلفة الخدمة، يتم إصدار فاتورة بها شهرياً. تابع لاختيار الآفات لخطتك.",
+          },
+        },
+        quote: {
+          noSelection: {
+            en: "Please select at least one service or package from Step 2.",
+            fr: "Veuillez sélectionner au moins un service ou forfait à l'étape 2.",
+            es: "Por favor seleccione al menos un servicio o paquete del Paso 2.",
+            zh: "请从步骤2中至少选择一项服务或套餐。",
+            it: "Seleziona almeno un servizio o pacchetto dal Passo 2.",
+            fa: "لطفاً حداقل یک خدمات یا بسته از مرحله 2 را انتخاب کنید.",
+            ar: "يرجى اختيار خدمة أو حزمة واحدة على الأقل من الخطوة 2.",
+          },
+          basePrice: {
+            en: "Base price",
+            fr: "Prix de base",
+            es: "Precio base",
+            zh: "基础价格",
+            it: "Prezzo base",
+            fa: "قیمت پایه",
+            ar: "السعر الأساسي",
+          },
+          severity: {
+            en: "severity",
+            fr: "gravité",
+            es: "gravedad",
+            zh: "严重程度",
+            it: "gravità",
+            fa: "شدت",
+            ar: "الخطورة",
+          },
+          baseTotal: {
+            en: "Base Total",
+            fr: "Total de Base",
+            es: "Total Base",
+            zh: "基础总计",
+            it: "Totale Base",
+            fa: "مجموع پایه",
+            ar: "المجموع الأساسي",
+          },
+          highSeverityTooltip: {
+            en: "2+ pests at High severity",
+            fr: "2+ nuisibles à gravité élevée",
+            es: "2+ plagas con gravedad alta",
+            zh: "2个以上高严重程度害虫",
+            it: "2+ parassiti ad alta gravità",
+            fa: "2+ آفات با شدت بالا",
+            ar: "2+ آفات بخطورة عالية",
+          },
+          majorInfestationDeal: {
+            en: "Major Infestation Deal",
+            fr: "Offre Infestation Majeure",
+            es: "Oferta de Infestación Mayor",
+            zh: "重大虫害优惠",
+            it: "Offerta Infestazione Maggiore",
+            fa: "معامله آلودگی عمده",
+            ar: "عرض الإصابة الكبيرة",
+          },
+          promoCode: {
+            en: "Promo Code",
+            fr: "Code Promo",
+            es: "Código Promocional",
+            zh: "促销代码",
+            it: "Codice Promozionale",
+            fa: "کد تخفیف",
+            ar: "رمز الترويج",
+          },
+          discount: {
+            en: "discount",
+            fr: "remise",
+            es: "descuento",
+            zh: "折扣",
+            it: "sconto",
+            fa: "تخفیف",
+            ar: "خصم",
+          },
+          seasonalPlanDiscount: {
+            en: "Seasonal Plan Discount (20%)",
+            fr: "Remise Plan Saisonnier (20%)",
+            es: "Descuento Plan Estacional (20%)",
+            zh: "季节性计划折扣 (20%)",
+            it: "Sconto Piano Stagionale (20%)",
+            fa: "تخفیف برنامه فصلی (20%)",
+            ar: "خصم الخطة الموسمية (20%)",
+          },
+          billedQuarterly: {
+            en: "Billed quarterly",
+            fr: "Facturé trimestriellement",
+            es: "Facturado trimestralmente",
+            zh: "按季度计费",
+            it: "Fatturato trimestralmente",
+            fa: "صورتحساب سه‌ماهه",
+            ar: "يتم إصدار فاتورة ربع سنوية",
+          },
+          monthlyPlanDiscount: {
+            en: "Monthly Plan Discount (30%)",
+            fr: "Remise Plan Mensuel (30%)",
+            es: "Descuento Plan Mensual (30%)",
+            zh: "月度计划折扣 (30%)",
+            it: "Sconto Piano Mensile (30%)",
+            fa: "تخفیف برنامه ماهانه (30%)",
+            ar: "خصم الخطة الشهرية (30%)",
+          },
+          billedMonthly: {
+            en: "Billed monthly",
+            fr: "Facturé mensuellement",
+            es: "Facturado mensualmente",
+            zh: "按月计费",
+            it: "Fatturato mensilmente",
+            fa: "صورتحساب ماهانه",
+            ar: "يتم إصدار فاتورة شهرية",
+          },
+          finalTotal: {
+            en: "FINAL TOTAL",
+            fr: "TOTAL FINAL",
+            es: "TOTAL FINAL",
+            zh: "最终总计",
+            it: "TOTALE FINALE",
+            fa: "مجموع نهایی",
+            ar: "المجموع النهائي",
           },
         },
       };
@@ -3731,11 +4430,7 @@
         ) {
           quoteSummary.innerHTML = `
                     <div style="text-align: center; padding: 40px; color: #666;">
-                        <p>${
-                          currentLanguage === "en"
-                            ? "Please select at least one service or package from Step 2."
-                            : "Veuillez sélectionner au moins un service ou forfait à l'étape 2."
-                        }</p>
+                        <p>${translations.quote.noSelection[currentLanguage]}</p>
                     </div>
                 `;
           return;
@@ -3793,14 +4488,7 @@
         // Display individual services
         serviceItems.forEach((item) => {
           const severityText = getSeverityDisplayName(item.severity);
-          const tooltipText =
-            currentLanguage === "en"
-              ? `Base price ${item.basePrice} × ${
-                  severityMultipliers[item.severity]
-                }x (${severityText} severity)`
-              : `Prix de base ${item.basePrice} × ${
-                  severityMultipliers[item.severity]
-                }x (gravité ${severityText})`;
+          const tooltipText = `${translations.quote.basePrice[currentLanguage]} ${item.basePrice} × ${severityMultipliers[item.severity]}x (${severityText} ${translations.quote.severity[currentLanguage]})`;
 
           html += `
                     <div class="quote-line">
@@ -3829,9 +4517,7 @@
         // Base total
         html += `
                 <div class="quote-line">
-                    <span>${
-                      currentLanguage === "en" ? "Base Total" : "Total de Base"
-                    }</span>
+                    <span>${translations.quote.baseTotal[currentLanguage]}</span>
                     <span>${baseTotal}</span>
                 </div>
             `;
@@ -3845,18 +4531,11 @@
         if (highSeverityCount >= 2) {
           const discount = 50;
           subtotal -= discount;
-          const tooltipText =
-            currentLanguage === "en"
-              ? "2+ pests at High severity"
-              : "2+ nuisibles à gravité élevée";
+          const tooltipText = translations.quote.highSeverityTooltip[currentLanguage];
 
           html += `
                     <div class="quote-line">
-                        <span>${
-                          currentLanguage === "en"
-                            ? "Major Infestation Deal"
-                            : "Offre Infestation Majeure"
-                        } <span class="tooltip" data-tooltip="${tooltipText}">?</span></span>
+                        <span>${translations.quote.majorInfestationDeal[currentLanguage]} <span class="tooltip" data-tooltip="${tooltipText}">?</span></span>
                         <span>-${discount}</span>
                     </div>
                 `;
@@ -3877,13 +4556,7 @@
               appliedPromoCode === "SILVER10" ? "10%" : "20%";
             html += `
                         <div class="quote-line">
-                            <span>${
-                              currentLanguage === "en"
-                                ? "Promo Code"
-                                : "Code Promo"
-                            } (${appliedPromoCode}) <span class="tooltip" data-tooltip="${discountPercent} ${
-              currentLanguage === "en" ? "discount" : "remise"
-            }">?</span></span>
+                            <span>${translations.quote.promoCode[currentLanguage]} (${appliedPromoCode}) <span class="tooltip" data-tooltip="${discountPercent} ${translations.quote.discount[currentLanguage]}">?</span></span>
                             <span>-${promoDiscount}</span>
                         </div>
                     `;
@@ -3897,15 +4570,7 @@
           finalTotal -= discount;
           html += `
                     <div class="quote-line">
-                        <span>${
-                          currentLanguage === "en"
-                            ? "Seasonal Plan Discount (20%)"
-                            : "Remise Plan Saisonnier (20%)"
-                        } <span class="tooltip" data-tooltip="${
-            currentLanguage === "en"
-              ? "Billed quarterly"
-              : "Facturé trimestriellement"
-          }">?</span></span>
+                        <span>${translations.quote.seasonalPlanDiscount[currentLanguage]} <span class="tooltip" data-tooltip="${translations.quote.billedQuarterly[currentLanguage]}">?</span></span>
                         <span>-${discount}</span>
                     </div>
                 `;
@@ -3914,15 +4579,7 @@
           finalTotal -= discount;
           html += `
                     <div class="quote-line">
-                        <span>${
-                          currentLanguage === "en"
-                            ? "Monthly Plan Discount (30%)"
-                            : "Remise Plan Mensuel (30%)"
-                        } <span class="tooltip" data-tooltip="${
-            currentLanguage === "en"
-              ? "Billed monthly"
-              : "Facturé mensuellement"
-          }">?</span></span>
+                        <span>${translations.quote.monthlyPlanDiscount[currentLanguage]} <span class="tooltip" data-tooltip="${translations.quote.billedMonthly[currentLanguage]}">?</span></span>
                         <span>-${discount}</span>
                     </div>
                 `;
@@ -3931,9 +4588,7 @@
         // Final total
         html += `
                 <div class="quote-line">
-                    <span>${
-                      currentLanguage === "en" ? "FINAL TOTAL" : "TOTAL FINAL"
-                    }</span>
+                    <span>${translations.quote.finalTotal[currentLanguage]}</span>
                     <span>${finalTotal}</span>
                 </div>
             `;

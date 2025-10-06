@@ -1,0 +1,22 @@
+﻿# humans.txt - The humans responsible for this website
+# https://humanstxt.org/
+
+/* TEAM */
+Company: SN Pest Control Montreal
+Location: Montreal, Quebec, Canada
+Contact: snpest20@gmail.com
+Phone: (514) 582-4400
+Website: https://www.silvernestpestcontrol.com
+
+/* SITE */
+Last update: 2025/10/05
+Standards: HTML5, CSS3, JavaScript ES6
+Components: Responsive Design, PWA, Structured Data
+Software: VS Code, Git
+SEO Focus: Bed Bug Extermination Montreal, Local Pest Control
+
+/* THANKS */
+Google Fonts
+Font Awesome
+Schema.org
+MDN Web Docs

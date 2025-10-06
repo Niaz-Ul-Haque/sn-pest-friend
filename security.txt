@@ -1,0 +1,5 @@
+﻿Contact: mailto:snpest20@gmail.com
+Contact: tel:+1-514-582-4400
+Expires: 2026-10-05T23:59:59.000Z
+Preferred-Languages: en, fr
+Canonical: https://www.silvernestpestcontrol.com/.well-known/security.txt
