@@ -2,6 +2,8 @@
   name: github
   repo: Niaz-Ul-Haque/sn-pest-friend
   branch: main
+  base_url: https://www.silvernestpestcontrol.com
+  auth_endpoint: api/auth
 
 media_folder: "images/blog"
 public_folder: "/images/blog"
