@@ -1,15 +1,4 @@
-﻿{
-  "headers": [
-    {
-      "source": "/admin/(.*)",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "text/html; charset=utf-8"
-        }
-      ]
-    }
-  ],
+{
   "rewrites": [
     {
       "source": "/blog",
@@ -19,7 +8,5 @@
       "source": "/admin",
       "destination": "/admin/index.html"
     }
-  ],
-  "cleanUrls": true,
-  "trailingSlash": false
+  ]
 }
