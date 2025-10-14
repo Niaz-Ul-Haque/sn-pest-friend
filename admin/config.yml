@@ -1,0 +1,28 @@
+﻿backend:
+  name: github
+  repo: Niaz-Ul-Haque/sn-pest-friend
+  branch: main
+  base_url: https://www.silvernestpestcontrol.com
+  auth_endpoint: api/auth
+
+media_folder: "images/blog"
+public_folder: "/images/blog"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title (English)", name: "title_en", widget: "string"}
+      - {label: "Title (French)", name: "title_fr", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "featured_image", widget: "image", required: false}
+      - {label: "Excerpt (English)", name: "excerpt_en", widget: "text"}
+      - {label: "Excerpt (French)", name: "excerpt_fr", widget: "text"}
+      - {label: "Body (English)", name: "body_en", widget: "markdown"}
+      - {label: "Body (French)", name: "body_fr", widget: "markdown"}
+      - {label: "Author", name: "author", widget: "string", default: "SN Pest Control"}
+      - {label: "SEO Keywords", name: "keywords", widget: "string", required: false}
+      - {label: "Published", name: "published", widget: "boolean", default: true}
