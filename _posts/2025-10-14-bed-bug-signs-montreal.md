@@ -1,12 +1,17 @@
 ---
-title_en: "5 Signs You Have a Bed Bug Infestation in Montreal"
-title_fr: "5 Signes que Vous Avez une Infestation de Punaises de Lit à Montréal"
+title_en: TEST
+title_fr: TEST
 date: 2025-10-14T10:00:00.000Z
 featured_image: /images/blog/bedbugs-signs.jpg
-excerpt_en: "Learn to identify the early warning signs of bed bugs in your Montreal home. Early detection is key to preventing a major infestation."
-excerpt_fr: "Apprenez à identifier les premiers signes d'alerte de punaises de lit dans votre maison à Montréal. La détection précoce est la clé pour prévenir une infestation majeure."
-author: "SN Pest Control"
-keywords: "bed bugs Montreal, bed bug signs, bed bug detection, pest control Montreal"
+excerpt_en: Learn to identify the early warning signs of bed bugs in your
+  Montreal home. Early detection is key to preventing a major infestation.
+excerpt_fr: Apprenez à identifier les premiers signes d'alerte de punaises de
+  lit dans votre maison à Montréal. La détection précoce est la clé pour
+  prévenir une infestation majeure.
+body_en: TEST
+body_fr: TEST
+author: SN Pest Control
+keywords: bed bugs Montreal, bed bug signs, bed bug detection, pest control Montreal
 published: true
 ---
 
