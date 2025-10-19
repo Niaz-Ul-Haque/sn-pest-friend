@@ -1,16 +1,13 @@
 ---
-title_en: TEST
-title_fr: TEST
+title_en: Hi ashfaque
+title_fr: Hi ashfaqueT
 date: 2025-10-14T10:00:00.000Z
 featured_image: /images/blog/bedbugs-signs.jpg
-excerpt_en: Learn to identify the early warning signs of bed bugs in your
-  Montreal home. Early detection is key to preventing a major infestation.
-excerpt_fr: Apprenez à identifier les premiers signes d'alerte de punaises de
-  lit dans votre maison à Montréal. La détection précoce est la clé pour
-  prévenir une infestation majeure.
-body_en: TEST
-body_fr: TEST
-author: SN Pest Control
+excerpt_en: Hi ashfaque
+excerpt_fr: Hi ashfaque
+body_en: Hi ashfaque
+body_fr: Hi ashfaque
+author: Mohsen
 keywords: bed bugs Montreal, bed bug signs, bed bug detection, pest control Montreal
 published: true
 ---
