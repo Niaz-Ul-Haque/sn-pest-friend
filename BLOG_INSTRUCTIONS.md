@@ -208,10 +208,9 @@ Here are some ideas for blog posts:
 4. "Eco-Friendly Pest Control: Safe for Families and Pets"
 5. "Seasonal Pest Control: What to Watch for Each Season in Montreal"
 6. "Commercial Pest Control: Protecting Your Restaurant or Hotel"
-7. "Heat Treatment vs Chemical Treatment for Bed Bugs"
-8. "10 Common Pests in Montreal and How to Identify Them"
-9. "What to Do If You Spot a Wasp Nest on Your Property"
-10. "The Complete Guide to Cockroach Prevention"
+7. "10 Common Pests in Montreal and How to Identify Them"
+8. "What to Do If You Spot a Wasp Nest on Your Property"
+9. "The Complete Guide to Cockroach Prevention"
 
 ---
 
