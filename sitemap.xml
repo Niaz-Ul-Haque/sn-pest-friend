@@ -1,9 +1,8 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-    
-    <!-- Home Page - High Priority -->
+
     <url>
         <loc>https://www.silvernestpestcontrol.com/</loc>
         <lastmod>2025-10-05</lastmod>
@@ -14,49 +13,145 @@
             <image:title>SN Pest Control Montreal Logo</image:title>
         </image:image>
     </url>
-    
-    <!-- Quote Calculator - High Priority -->
+
     <url>
         <loc>https://www.silvernestpestcontrol.com/quote-calculator.html</loc>
         <lastmod>2025-10-05</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
-    
-    <!-- Service Sections - Bed Bug Priority -->
+
+    <url>
+        <loc>https://www.silvernestpestcontrol.com/pests/</loc>
+        <lastmod>2025-10-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.silvernestpestcontrol.com/pests/bed-bugs.html</loc>
+        <lastmod>2025-10-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.silvernestpestcontrol.com/pests/rats.html</loc>
+        <lastmod>2025-10-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://www.silvernestpestcontrol.com/pests/mice.html</loc>
+        <lastmod>2025-10-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://www.silvernestpestcontrol.com/pests/cockroaches.html</loc>
+        <lastmod>2025-10-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://www.silvernestpestcontrol.com/pests/ants.html</loc>
+        <lastmod>2025-10-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.silvernestpestcontrol.com/pests/wasps.html</loc>
+        <lastmod>2025-10-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.silvernestpestcontrol.com/pests/bees.html</loc>
+        <lastmod>2025-10-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.75</priority>
+    </url>
+    <url>
+        <loc>https://www.silvernestpestcontrol.com/pests/beetles.html</loc>
+        <lastmod>2025-10-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.75</priority>
+    </url>
+    <url>
+        <loc>https://www.silvernestpestcontrol.com/pests/flies.html</loc>
+        <lastmod>2025-10-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.75</priority>
+    </url>
+    <url>
+        <loc>https://www.silvernestpestcontrol.com/pests/mites.html</loc>
+        <lastmod>2025-10-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.75</priority>
+    </url>
+    <url>
+        <loc>https://www.silvernestpestcontrol.com/pests/moths.html</loc>
+        <lastmod>2025-10-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.75</priority>
+    </url>
+    <url>
+        <loc>https://www.silvernestpestcontrol.com/pests/spiders.html</loc>
+        <lastmod>2025-10-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.75</priority>
+    </url>
+    <url>
+        <loc>https://www.silvernestpestcontrol.com/pests/fleas.html</loc>
+        <lastmod>2025-10-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.75</priority>
+    </url>
+    <url>
+        <loc>https://www.silvernestpestcontrol.com/pests/ticks.html</loc>
+        <lastmod>2025-10-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.75</priority>
+    </url>
+    <url>
+        <loc>https://www.silvernestpestcontrol.com/pests/termites.html</loc>
+        <lastmod>2025-10-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.75</priority>
+    </url>
+    <url>
+        <loc>https://www.silvernestpestcontrol.com/pests/mosquitoes.html</loc>
+        <lastmod>2025-10-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.75</priority>
+    </url>
+
     <url>
         <loc>https://www.silvernestpestcontrol.com/#services</loc>
         <lastmod>2025-10-05</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
-    
     <url>
         <loc>https://www.silvernestpestcontrol.com/#process</loc>
         <lastmod>2025-10-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-    
     <url>
         <loc>https://www.silvernestpestcontrol.com/#areas</loc>
         <lastmod>2025-10-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-    
     <url>
         <loc>https://www.silvernestpestcontrol.com/#faq</loc>
         <lastmod>2025-10-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-    
     <url>
         <loc>https://www.silvernestpestcontrol.com/#contact</loc>
         <lastmod>2025-10-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-    
 </urlset>
