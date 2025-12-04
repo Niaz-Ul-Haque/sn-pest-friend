@@ -265,6 +265,25 @@
                 
                 <div class="nav-links">
                     <a href="#services" data-en="Services" data-fr="Services">Services</a>
+                    <div class="nav-item has-dropdown">
+                        <button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true" data-en="Pests" data-fr="Parasites">
+                            Parasites
+                            <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="nav-dropdown" role="menu">
+                            <a href="/pests/" role="menuitem" data-en="All Pests" data-fr="Tous les Parasites">Tous les Parasites</a>
+                            <a href="/pests/bed-bugs.html" role="menuitem" data-en="Bed Bugs" data-fr="Punaises de lit">Punaises de lit</a>
+                            <a href="/pests/rats.html" role="menuitem" data-en="Rats" data-fr="Rats">Rats</a>
+                            <a href="/pests/mice.html" role="menuitem" data-en="Mice" data-fr="Souris">Souris</a>
+                            <a href="/pests/cockroaches.html" role="menuitem" data-en="Cockroaches" data-fr="Coquerelles">Coquerelles</a>
+                            <a href="/pests/ants.html" role="menuitem" data-en="Ants" data-fr="Fourmis">Fourmis</a>
+                            <a href="/pests/wasps.html" role="menuitem" data-en="Wasps" data-fr="Guêpes">Guêpes</a>
+                            <a href="/pests/spiders.html" role="menuitem" data-en="Spiders" data-fr="Araignées">Araignées</a>
+                            <a href="/pests/fleas.html" role="menuitem" data-en="Fleas" data-fr="Puces">Puces</a>
+                        </div>
+                    </div>
                     <a href="#process" data-en="Our Process" data-fr="Notre Processus">Notre Processus</a>
                     <a href="#areas" data-en="Service Areas" data-fr="Secteurs Desservis">Secteurs Desservis</a>
                     <a href="/blog/" data-en="Blog" data-fr="Blog">Blog</a>
@@ -916,14 +935,16 @@
                 </div>
                 
                 <div class="footer-services">
-                    <h3 data-en="Services" data-fr="Services">Services</h3>
+                    <h3 data-en="Pests" data-fr="Parasites">Parasites</h3>
                     <ul>
-                        <li><a href="#services" data-en="Bed Bug Extermination" data-fr="Extermination de Punaises de Lit">Extermination de Punaises de Lit</a></li>
-                        <li><a href="#services" data-en="Rodent Control" data-fr="Contrôle de Rongeurs">Contrôle de Rongeurs</a></li>
-                        <li><a href="#services" data-en="Cockroach Extermination" data-fr="Extermination de Coquerelles">Extermination de Coquerelles</a></li>
-                        <li><a href="#services" data-en="Ant and Spider Control" data-fr="Contrôle de Fourmis et Araignées">Contrôle de Fourmis et Araignées</a></li>
-                        <li><a href="#services" data-en="Wasp Removal" data-fr="Enlèvement de Guêpes">Enlèvement de Guêpes</a></li>
-                        <li><a href="#services" data-en="Commercial Pest Control" data-fr="Contrôle Parasitaire Commercial">Contrôle Parasitaire Commercial</a></li>
+                        <li><a href="/pests/bed-bugs.html" data-en="Bed Bugs" data-fr="Punaises de lit">Punaises de lit</a></li>
+                        <li><a href="/pests/rats.html" data-en="Rats" data-fr="Rats">Rats</a></li>
+                        <li><a href="/pests/mice.html" data-en="Mice" data-fr="Souris">Souris</a></li>
+                        <li><a href="/pests/cockroaches.html" data-en="Cockroaches" data-fr="Coquerelles">Coquerelles</a></li>
+                        <li><a href="/pests/ants.html" data-en="Ants" data-fr="Fourmis">Fourmis</a></li>
+                        <li><a href="/pests/wasps.html" data-en="Wasps" data-fr="Guêpes">Guêpes</a></li>
+                        <li><a href="/pests/spiders.html" data-en="Spiders" data-fr="Araignées">Araignées</a></li>
+                        <li><a href="/pests/fleas.html" data-en="Fleas" data-fr="Puces">Puces</a></li>
                     </ul>
                 </div>
                 
@@ -1009,17 +1030,17 @@
             if (languageSelect) {
                 languageSelect.value = currentLanguage;
             }
-            
+
             const hamburger = document.querySelector('.hamburger');
             const navLinks = document.querySelector('.nav-links');
-            
+
             hamburger.addEventListener('click', function() {
                 const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
                 hamburger.setAttribute('aria-expanded', !isExpanded);
                 hamburger.classList.toggle('active');
                 navLinks.classList.toggle('active');
             });
-            
+
             // Close menu when clicking a link
             const links = navLinks.querySelectorAll('a');
             links.forEach(link => {
@@ -1027,6 +1048,68 @@
                     hamburger.classList.remove('active');
                     navLinks.classList.remove('active');
                     hamburger.setAttribute('aria-expanded', 'false');
+                });
+            });
+
+            // Dropdown menu functionality
+            const dropdowns = document.querySelectorAll('.nav-item.has-dropdown');
+            dropdowns.forEach(function(dropdown) {
+                const toggle = dropdown.querySelector('.nav-dropdown-toggle');
+                const menu = dropdown.querySelector('.nav-dropdown');
+
+                toggle.addEventListener('click', function(event) {
+                    event.stopPropagation();
+                    const isOpen = dropdown.classList.toggle('open');
+                    toggle.setAttribute('aria-expanded', String(isOpen));
+                });
+
+                // Keyboard navigation
+                toggle.addEventListener('keydown', function(event) {
+                    if (event.key === 'ArrowDown') {
+                        event.preventDefault();
+                        dropdown.classList.add('open');
+                        toggle.setAttribute('aria-expanded', 'true');
+                        const firstLink = menu.querySelector('a');
+                        if (firstLink) firstLink.focus();
+                    }
+                    if (event.key === 'Escape') {
+                        dropdown.classList.remove('open');
+                        toggle.setAttribute('aria-expanded', 'false');
+                    }
+                });
+
+                // Menu item keyboard navigation
+                const menuItems = menu.querySelectorAll('a');
+                menuItems.forEach(function(item, index) {
+                    item.addEventListener('keydown', function(event) {
+                        if (event.key === 'ArrowDown') {
+                            event.preventDefault();
+                            const next = menuItems[index + 1] || menuItems[0];
+                            next.focus();
+                        }
+                        if (event.key === 'ArrowUp') {
+                            event.preventDefault();
+                            const prev = menuItems[index - 1] || menuItems[menuItems.length - 1];
+                            prev.focus();
+                        }
+                        if (event.key === 'Escape') {
+                            dropdown.classList.remove('open');
+                            toggle.setAttribute('aria-expanded', 'false');
+                            toggle.focus();
+                        }
+                    });
+                });
+            });
+
+            // Close dropdowns when clicking outside
+            document.addEventListener('click', function(event) {
+                const activeDropdowns = document.querySelectorAll('.nav-item.has-dropdown.open');
+                activeDropdowns.forEach(function(dropdown) {
+                    if (!dropdown.contains(event.target)) {
+                        dropdown.classList.remove('open');
+                        const toggle = dropdown.querySelector('.nav-dropdown-toggle');
+                        if (toggle) toggle.setAttribute('aria-expanded', 'false');
+                    }
                 });
             });
         });
