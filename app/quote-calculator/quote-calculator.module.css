@@ -1,0 +1,728 @@
+/* Quote Calculator Styles - Premium Design */
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 20px;
+}
+
+/* Language Dropdown - Hidden as using global */
+.languageDropdown {
+  display: none;
+}
+
+.languageSelect {
+  display: none;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 40px 30px;
+  background: linear-gradient(135deg, #FDF8F3 0%, #F5EDE4 100%);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(13, 59, 38, 0.08);
+  border: 1px solid rgba(13, 59, 38, 0.05);
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: 'Instrument Serif', Georgia, serif;
+  color: #0D3B26;
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #4A7C5D;
+  font-weight: 500;
+  font-family: 'Outfit', system-ui, sans-serif;
+}
+
+/* Progress Bar */
+.progressBar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  background: white;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(13, 59, 38, 0.06);
+  gap: 12px;
+  border: 1px solid rgba(13, 59, 38, 0.05);
+}
+
+.progressStep {
+  flex: 1;
+  text-align: center;
+  padding: 14px 12px;
+  border-radius: 12px;
+  background: #F8F8F8;
+  color: #666;
+  font-weight: 600;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  font-size: 0.85rem;
+  font-family: 'Outfit', system-ui, sans-serif;
+}
+
+.progressStep.active {
+  background: linear-gradient(135deg, #0D3B26, #1a5a3a);
+  color: white;
+  box-shadow: 0 8px 24px rgba(13, 59, 38, 0.25);
+  transform: scale(1.02);
+}
+
+.progressStep.completed {
+  background: linear-gradient(135deg, #7DB892, #B8E1A5);
+  color: #0D3B26;
+}
+
+/* Step Container */
+.step {
+  background: white;
+  border-radius: 24px;
+  padding: 36px;
+  box-shadow: 0 8px 40px rgba(13, 59, 38, 0.08);
+  margin-bottom: 20px;
+  animation: fadeIn 0.4s ease;
+  border: 1px solid rgba(13, 59, 38, 0.05);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.step h2 {
+  color: #0D3B26;
+  margin-bottom: 28px;
+  font-size: 1.5rem;
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-weight: 400;
+  border-bottom: 2px solid rgba(125, 184, 146, 0.3);
+  padding-bottom: 16px;
+}
+
+/* Form Groups */
+.formGroup {
+  margin-bottom: 28px;
+}
+
+.formGroup label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #1a3a2a;
+  font-size: 1rem;
+  font-family: 'Outfit', system-ui, sans-serif;
+}
+
+.formGroup input[type="text"],
+.formGroup input[type="tel"] {
+  width: 100%;
+  padding: 16px;
+  border: 2px solid rgba(13, 59, 38, 0.12);
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-sizing: border-box;
+  font-family: 'Outfit', system-ui, sans-serif;
+  background: #FAFAFA;
+}
+
+.formGroup input:focus {
+  border-color: #4A7C5D;
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(74, 124, 93, 0.15);
+  background: white;
+}
+
+/* Radio Groups */
+.radioGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.radioOption {
+  display: flex;
+  align-items: center;
+  padding: 18px;
+  border: 2px solid rgba(13, 59, 38, 0.1);
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  gap: 14px;
+  background: #FAFAFA;
+}
+
+.radioOption:hover {
+  border-color: #4A7C5D;
+  background: #FDF8F3;
+}
+
+.radioOption.selected {
+  border-color: #0D3B26;
+  background: linear-gradient(135deg, #FDF8F3, #F5EDE4);
+  box-shadow: 0 4px 20px rgba(13, 59, 38, 0.1);
+}
+
+.radioOption input[type="radio"] {
+  accent-color: #0D3B26;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Info Box */
+.infoBox {
+  background: linear-gradient(135deg, #FDF8F3, #F5EDE4);
+  border-left: 4px solid #4A7C5D;
+  padding: 18px 20px;
+  border-radius: 0 14px 14px 0;
+  margin: 18px 0;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #1a3a2a;
+}
+
+/* Buttons */
+.btn {
+  padding: 16px 32px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-family: 'Outfit', system-ui, sans-serif;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btnPrimary {
+  background: linear-gradient(135deg, #0D3B26, #1a5a3a);
+  color: white;
+}
+
+.btnPrimary:hover:not(:disabled) {
+  background: linear-gradient(135deg, #1a5a3a, #0D3B26);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(13, 59, 38, 0.3);
+}
+
+.btnSecondary {
+  background: #F5F5F5;
+  color: #1a3a2a;
+  border: 2px solid rgba(13, 59, 38, 0.1);
+}
+
+.btnSecondary:hover {
+  background: #EBEBEB;
+  transform: translateY(-2px);
+  border-color: rgba(13, 59, 38, 0.2);
+}
+
+.btnDanger {
+  background: linear-gradient(135deg, #C4785C, #b56a4e);
+  color: white;
+}
+
+.btnDanger:hover {
+  background: linear-gradient(135deg, #b56a4e, #a55e42);
+  transform: translateY(-2px);
+}
+
+/* Services Section */
+.servicesSection {
+  margin-bottom: 30px;
+}
+
+.servicesSection h3 {
+  color: #0D3B26;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-weight: 400;
+}
+
+/* Package Cards */
+.packageCard {
+  padding: 20px;
+  border: 2px solid #e0e0e0;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 12px;
+  background: white;
+}
+
+.packageCard:hover {
+  border-color: #4CAF50;
+  transform: translateX(5px);
+}
+
+.packageCard.selected {
+  border-color: #4CAF50;
+  background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.25);
+}
+
+.packageCard h4 {
+  margin: 0 0 8px 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.packageIncludes {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Service Cards */
+.serviceCard {
+  padding: 18px;
+  border: 2px solid #e0e0e0;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 12px;
+  background: white;
+}
+
+.serviceCard:hover {
+  border-color: #4CAF50;
+}
+
+.serviceCard.selected {
+  border-color: #4CAF50;
+  background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+}
+
+.serviceInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.serviceDetails {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.serviceDetails strong {
+  font-size: 1rem;
+  color: #333;
+}
+
+.pestImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Severity Controls */
+.severityControls {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.severityBtn {
+  padding: 8px 14px;
+  border: 2px solid #e0e0e0;
+  border-radius: 20px;
+  background: white;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.severityBtn:hover {
+  border-color: #4CAF50;
+}
+
+.severityBtn.selected {
+  background: linear-gradient(135deg, #4CAF50, #2e7d32);
+  color: white;
+  border-color: #2e7d32;
+}
+
+/* Pro Tip */
+.proTip {
+  margin-top: 12px;
+  padding: 12px;
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  border-left: 4px solid #ff9800;
+  color: #6d4c00;
+}
+
+/* Bedbug Pricing Info */
+.bedbugPricingInfo {
+  margin-top: 12px;
+  padding: 12px;
+  background: linear-gradient(135deg, #fce4ec, #f8bbd9);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  border-left: 4px solid #e91e63;
+}
+
+/* Disclaimer */
+.disclaimer {
+  background: linear-gradient(135deg, #fff8e1, #ffecb3);
+  border-left: 4px solid #ffc107;
+  padding: 16px;
+  border-radius: 0 12px 12px 0;
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+}
+
+/* Quote Summary */
+.quoteSummary {
+  background: linear-gradient(135deg, #fafafa, #f0f0f0);
+  border-radius: 20px;
+  padding: 32px;
+  margin-bottom: 25px;
+  box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.quoteLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 1rem;
+}
+
+.quoteLine:last-child {
+  border-bottom: none;
+}
+
+/* Tooltip */
+.tooltip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  background: #888;
+  color: white;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  margin-left: 8px;
+  cursor: help;
+  position: relative;
+}
+
+.tooltip:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  z-index: 100;
+  margin-bottom: 5px;
+}
+
+/* Copy Button */
+.copyBtn {
+  width: 100%;
+  background: linear-gradient(135deg, #2196F3, #1565C0);
+  color: white;
+  font-size: 1.1rem;
+  padding: 18px;
+  margin-bottom: 20px;
+}
+
+.copyBtn:hover {
+  background: linear-gradient(135deg, #1565C0, #0d47a1);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4);
+}
+
+/* Success/Error Messages */
+.successMessage {
+  display: none;
+  color: #2e7d32;
+  font-weight: 600;
+  margin-top: 10px;
+  padding: 10px;
+  background: #e8f5e9;
+  border-radius: 8px;
+}
+
+.errorMessage {
+  display: none;
+  color: #c62828;
+  font-weight: 600;
+  margin-top: 10px;
+  padding: 10px;
+  background: #ffebee;
+  border-radius: 8px;
+}
+
+/* Contact Info */
+.contactInfo {
+  background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.emailInfo,
+.whatsappInfo,
+.phoneInfo,
+.addressInfo {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.whatsappInfo {
+  color: #25d366;
+}
+
+/* Next Steps */
+.nextSteps {
+  background: linear-gradient(135deg, #fff8e1, #ffecb3);
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.nextSteps h4 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.stepsList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.stepItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+  background: white;
+  border-radius: 10px;
+}
+
+.stepNumber {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(135deg, #4CAF50, #2e7d32);
+  color: white;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.whatsappEmphasis {
+  margin-top: 15px;
+  padding: 12px;
+  background: white;
+  border-radius: 10px;
+  color: #25d366;
+  text-align: center;
+}
+
+/* Navigation */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.navigation > div {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 25px;
+  background: linear-gradient(135deg, #fafafa, #f0f0f0);
+  border-radius: 15px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+    margin: 1rem auto;
+  }
+
+  .header {
+    padding: 20px;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .progressBar {
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+  }
+
+  .progressStep {
+    padding: 12px;
+    font-size: 0.8rem;
+  }
+
+  .step {
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .step h2 {
+    font-size: 1.3rem;
+  }
+
+  .serviceInfo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .severityControls {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .severityBtn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  .navigation {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .navigation > div {
+    justify-content: center;
+  }
+
+  .btn {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+
+  .quoteSummary {
+    padding: 20px;
+  }
+
+  .quoteLine {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 1.6rem;
+  }
+
+  .languageSelect {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .step {
+    padding: 15px;
+  }
+
+  .formGroup input[type="text"],
+  .formGroup input[type="tel"] {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+
+  .radioOption {
+    padding: 12px;
+  }
+
+  .packageCard,
+  .serviceCard {
+    padding: 15px;
+  }
+
+  .severityBtn {
+    padding: 5px 10px;
+    font-size: 0.75rem;
+  }
+}
+
+/* RTL Support for Arabic and Persian */
+[dir="rtl"] .container,
+.container:has([data-lang="ar"]),
+.container:has([data-lang="fa"]) {
+  direction: rtl;
+}
+
+[dir="rtl"] .infoBox,
+[dir="rtl"] .proTip,
+[dir="rtl"] .bedbugPricingInfo,
+[dir="rtl"] .disclaimer {
+  border-left: none;
+  border-right: 4px solid;
+  border-radius: 12px 0 0 12px;
+}

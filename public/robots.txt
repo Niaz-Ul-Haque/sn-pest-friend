@@ -1,0 +1,39 @@
+# robots.txt for SN Pest Control Montreal
+# Optimized for maximum SEO - Bed Bug Focus
+
+User-agent: *
+Allow: /
+Allow: /images/
+
+# Priority pages for crawling
+Allow: /
+Allow: /quote-calculator/
+Allow: /pests/
+
+# Sitemap location
+Sitemap: https://www.silvernestpestcontrol.com/sitemap.xml
+
+# Search Engine Specific Rules
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Googlebot-Image
+Allow: /images/
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 0
+
+# Block non-essential paths
+User-agent: *
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Host directive
+Host: https://www.silvernestpestcontrol.com
