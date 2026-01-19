@@ -71,16 +71,53 @@ export default function Header() {
     }
   };
 
-  const pestLinks = [
-    { href: '/pests/', label: t('All Pests', 'Tous les Parasites') },
-    { href: '/pests/bed-bugs/', label: t('Bed Bugs', 'Punaises de lit') },
-    { href: '/pests/rats/', label: 'Rats' },
-    { href: '/pests/mice/', label: t('Mice', 'Souris') },
-    { href: '/pests/cockroaches/', label: t('Cockroaches', 'Coquerelles') },
-    { href: '/pests/ants/', label: t('Ants', 'Fourmis') },
-    { href: '/pests/wasps/', label: t('Wasps', 'Guêpes') },
-    { href: '/pests/spiders/', label: t('Spiders', 'Araignées') },
-    { href: '/pests/fleas/', label: t('Fleas', 'Puces') },
+  // Organized pest categories for mega menu
+  const pestCategories = [
+    {
+      title: t('Rodents', 'Rongeurs'),
+      icon: '🐀',
+      pests: [
+        { href: '/pests/rats/', label: 'Rats' },
+        { href: '/pests/mice/', label: t('Mice', 'Souris') },
+      ],
+    },
+    {
+      title: t('Crawling Insects', 'Insectes Rampants'),
+      icon: '🪳',
+      pests: [
+        { href: '/pests/bed-bugs/', label: t('Bed Bugs', 'Punaises de lit') },
+        { href: '/pests/cockroaches/', label: t('Cockroaches', 'Coquerelles') },
+        { href: '/pests/ants/', label: t('Ants', 'Fourmis') },
+        { href: '/pests/fleas/', label: t('Fleas', 'Puces') },
+        { href: '/pests/ticks/', label: t('Ticks', 'Tiques') },
+        { href: '/pests/silverfish/', label: t('Silverfish', 'Poissons d\'argent') },
+        { href: '/pests/centipedes/', label: t('Centipedes', 'Centipèdes') },
+        { href: '/pests/earwigs/', label: t('Earwigs', 'Perce-oreilles') },
+        { href: '/pests/carpet-beetles/', label: t('Carpet Beetles', 'Anthrènes') },
+      ],
+    },
+    {
+      title: t('Flying Insects', 'Insectes Volants'),
+      icon: '🦟',
+      pests: [
+        { href: '/pests/wasps/', label: t('Wasps', 'Guêpes') },
+        { href: '/pests/hornets/', label: t('Hornets', 'Frelons') },
+        { href: '/pests/mosquitoes/', label: t('Mosquitoes', 'Moustiques') },
+        { href: '/pests/fruit-flies/', label: t('Fruit Flies', 'Mouches à fruits') },
+        { href: '/pests/house-flies/', label: t('House Flies', 'Mouches domestiques') },
+        { href: '/pests/drain-flies/', label: t('Drain Flies', 'Mouches des drains') },
+        { href: '/pests/moths/', label: t('Moths', 'Mites') },
+      ],
+    },
+    {
+      title: t('Other Pests', 'Autres Parasites'),
+      icon: '🕷️',
+      pests: [
+        { href: '/pests/spiders/', label: t('Spiders', 'Araignées') },
+        { href: '/pests/boxelder-bugs/', label: t('Boxelder Bugs', 'Punaises de l\'érable') },
+        { href: '/pests/termites/', label: t('Termites', 'Termites') },
+      ],
+    },
   ];
 
   return (
@@ -135,17 +172,41 @@ export default function Header() {
                     <polyline points="6 9 12 15 18 9"></polyline>
                   </svg>
                 </button>
-                <div className="nav-dropdown" role="menu">
-                  {pestLinks.map((link) => (
+                <div className="nav-mega-dropdown" role="menu">
+                  <div className="mega-dropdown-header">
                     <Link 
-                      key={link.href} 
-                      href={link.href} 
-                      role="menuitem" 
+                      href="/pests/" 
+                      className="mega-dropdown-all-link"
                       onClick={closeMenu}
                     >
-                      {link.label}
+                      {t('View All Pests', 'Voir Tous les Parasites')}
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
                     </Link>
-                  ))}
+                  </div>
+                  <div className="mega-dropdown-grid">
+                    {pestCategories.map((category) => (
+                      <div key={category.title} className="mega-dropdown-category">
+                        <div className="mega-category-header">
+                          <span className="mega-category-icon">{category.icon}</span>
+                          <span className="mega-category-title">{category.title}</span>
+                        </div>
+                        <div className="mega-category-links">
+                          {category.pests.map((pest) => (
+                            <Link 
+                              key={pest.href} 
+                              href={pest.href} 
+                              role="menuitem"
+                              onClick={closeMenu}
+                            >
+                              {pest.label}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
               

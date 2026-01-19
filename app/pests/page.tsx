@@ -3,8 +3,8 @@ import PestsIndexClient from './PestsIndexClient';
 
 export const metadata: Metadata = {
   title: "Guide Complet des Parasites à Montréal | Identification & Extermination",
-  description: "Guide complet des parasites à Montréal: punaises de lit, rats, souris, coquerelles, fourmis, guêpes, araignées, puces. Apprenez à identifier les signes d'infestation et découvrez nos solutions d'extermination professionnelles. Appelez (514) 582-4400.",
-  keywords: "guide parasites Montréal, identification punaises de lit, identification rats, souris Montréal, coquerelles identification, fourmis charpentières, guêpes Montréal, araignées Québec, puces animaux, signes infestation, extermination parasites, pest identification Montreal",
+  description: "Guide complet des 21 parasites à Montréal: punaises de lit, rats, souris, coquerelles, fourmis, guêpes, araignées, puces, termites, moustiques, tiques, frelons, mouches et plus. Appelez (514) 582-4400.",
+  keywords: "guide parasites Montréal, punaises de lit, rats, souris, coquerelles, fourmis, guêpes, araignées, puces, termites, moustiques, tiques, frelons, mouches domestiques, mouches drain, punaises érable, mites, anthrènes, perce-oreilles, mouches fruits, extermination Montréal",
   alternates: {
     canonical: "/pests/",
     languages: {
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "SN Pest Control Montréal",
     title: "Guide Complet des Parasites à Montréal | SN Pest Control",
-    description: "Guide complet pour identifier et éliminer les parasites à Montréal. Punaises de lit, rats, souris, coquerelles, fourmis, guêpes et plus.",
+    description: "Guide complet pour identifier et éliminer 21 types de parasites à Montréal. Punaises de lit, rats, souris, termites, tiques, frelons et plus. Solutions professionnelles.",
     url: "/pests/",
     locale: "fr_CA",
     alternateLocale: "en_CA",
@@ -54,7 +54,20 @@ const collectionPageSchema = {
       {"@type": "ListItem", "position": 5, "url": "https://www.silvernestpestcontrol.com/pests/ants/", "name": "Fourmis"},
       {"@type": "ListItem", "position": 6, "url": "https://www.silvernestpestcontrol.com/pests/wasps/", "name": "Guêpes"},
       {"@type": "ListItem", "position": 7, "url": "https://www.silvernestpestcontrol.com/pests/spiders/", "name": "Araignées"},
-      {"@type": "ListItem", "position": 8, "url": "https://www.silvernestpestcontrol.com/pests/fleas/", "name": "Puces"}
+      {"@type": "ListItem", "position": 8, "url": "https://www.silvernestpestcontrol.com/pests/fleas/", "name": "Puces"},
+      {"@type": "ListItem", "position": 9, "url": "https://www.silvernestpestcontrol.com/pests/termites/", "name": "Termites"},
+      {"@type": "ListItem", "position": 10, "url": "https://www.silvernestpestcontrol.com/pests/mosquitoes/", "name": "Moustiques"},
+      {"@type": "ListItem", "position": 11, "url": "https://www.silvernestpestcontrol.com/pests/silverfish/", "name": "Poissons d'argent"},
+      {"@type": "ListItem", "position": 12, "url": "https://www.silvernestpestcontrol.com/pests/centipedes/", "name": "Centipèdes"},
+      {"@type": "ListItem", "position": 13, "url": "https://www.silvernestpestcontrol.com/pests/earwigs/", "name": "Perce-oreilles"},
+      {"@type": "ListItem", "position": 14, "url": "https://www.silvernestpestcontrol.com/pests/fruit-flies/", "name": "Mouches à fruits"},
+      {"@type": "ListItem", "position": 15, "url": "https://www.silvernestpestcontrol.com/pests/carpet-beetles/", "name": "Anthrènes des tapis"},
+      {"@type": "ListItem", "position": 16, "url": "https://www.silvernestpestcontrol.com/pests/moths/", "name": "Mites"},
+      {"@type": "ListItem", "position": 17, "url": "https://www.silvernestpestcontrol.com/pests/ticks/", "name": "Tiques"},
+      {"@type": "ListItem", "position": 18, "url": "https://www.silvernestpestcontrol.com/pests/hornets/", "name": "Frelons"},
+      {"@type": "ListItem", "position": 19, "url": "https://www.silvernestpestcontrol.com/pests/house-flies/", "name": "Mouches domestiques"},
+      {"@type": "ListItem", "position": 20, "url": "https://www.silvernestpestcontrol.com/pests/drain-flies/", "name": "Mouches de drain"},
+      {"@type": "ListItem", "position": 21, "url": "https://www.silvernestpestcontrol.com/pests/boxelder-bugs/", "name": "Punaises de l'érable"}
     ]
   }
 };
