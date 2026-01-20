@@ -12,10 +12,10 @@
    ================================================================= */
 :root {
   /* Primary Brand Colors - Deep Forest Palette */
-  --color-forest: #0D3B26;
-  --color-forest-light: #1A5438;
-  --color-sage: #4A7C5D;
-  --color-mint: #7DB892;
+  --color-forest: #056838;
+  --color-forest-light: #056838;
+  --color-sage: #8CC73F;
+  --color-mint: #8CC73F;
   --color-lime: #B8E1A5;
   
   /* Accent Colors - Warm Earth Tones */
