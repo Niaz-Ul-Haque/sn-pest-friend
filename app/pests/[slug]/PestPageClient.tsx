@@ -34,8 +34,8 @@ export default function PestPageClient({ pest }: { pest: PestData }) {
                   <Link href="/#contact" className="btn btn-primary">
                     {t("Get a Free Quote", "Obtenez une Soumission Gratuite")}
                   </Link>
-                  <a href="tel:+15146127678" className="btn btn-outline">
-                    {t("Call Now: (514) 612-7678", "Appelez: (514) 612-7678")}
+                  <a href="tel:+15145824400" className="btn btn-outline">
+                    {t("Call Now: (514) 582-4400", "Appelez: (514) 582-4400")}
                   </a>
                 </div>
               </div>
@@ -183,8 +183,8 @@ export default function PestPageClient({ pest }: { pest: PestData }) {
               <Link href="/#contact" className="btn btn-primary btn-large">
                 {t("Get Free Quote", "Soumission Gratuite")}
               </Link>
-              <a href="tel:+15146127678" className="btn btn-outline btn-large">
-                (514) 612-7678
+              <a href="tel:+15145824400" className="btn btn-outline btn-large">
+                (514) 582-4400
               </a>
             </div>
           </div>
